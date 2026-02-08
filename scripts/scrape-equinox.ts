@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import * as cheerio from "cheerio";
+import type { Element } from "domhandler";
 import { parseHoursLines } from "../lib/hours";
 import type { Club, HoursSet } from "../lib/types";
 
@@ -192,7 +193,7 @@ function extractText($: cheerio.CheerioAPI, selectors: string[]): string {
   return "";
 }
 
-function collectSectionLines($: cheerio.CheerioAPI, heading: cheerio.Element): string[] {
+function collectSectionLines($: cheerio.CheerioAPI, heading: Element): string[] {
   const lines: string[] = [];
   const section = $(heading).nextUntil("h1, h2, h3, h4, h5");
   if (!section.length) {
