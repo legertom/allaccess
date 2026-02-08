@@ -1,0 +1,84 @@
+[
+  {
+    "id": "sample-midtown",
+    "slug": "sample-midtown",
+    "name": "Sample Midtown",
+    "address": {
+      "line1": "123 Example Ave",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10001"
+    },
+    "geo": {
+      "lat": 40.7506,
+      "lng": -73.9935
+    },
+    "timezone": "America/New_York",
+    "amenities": ["Pool", "Spa", "Sauna"],
+    "hours": {
+      "club": {
+        "spans": [
+          { "day": 0, "open": "07:00", "close": "20:00" },
+          { "day": 1, "open": "05:30", "close": "22:00" },
+          { "day": 2, "open": "05:30", "close": "22:00" },
+          { "day": 3, "open": "05:30", "close": "22:00" },
+          { "day": 4, "open": "05:30", "close": "22:00" },
+          { "day": 5, "open": "05:30", "close": "22:00" },
+          { "day": 6, "open": "07:00", "close": "20:00" }
+        ]
+      },
+      "amenities": {
+        "pool": {
+          "spans": [
+            { "day": 0, "open": "08:00", "close": "18:00" },
+            { "day": 1, "open": "06:00", "close": "21:00" },
+            { "day": 2, "open": "06:00", "close": "21:00" },
+            { "day": 3, "open": "06:00", "close": "21:00" },
+            { "day": 4, "open": "06:00", "close": "21:00" },
+            { "day": 5, "open": "06:00", "close": "21:00" },
+            { "day": 6, "open": "08:00", "close": "18:00" }
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/sample-midtown",
+      "lastFetchedAt": "2026-02-07T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "sample-uptown",
+    "slug": "sample-uptown",
+    "name": "Sample Uptown",
+    "address": {
+      "line1": "456 Sample Blvd",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10024"
+    },
+    "geo": {
+      "lat": 40.7851,
+      "lng": -73.9683
+    },
+    "timezone": "America/New_York",
+    "amenities": ["Yoga Studio", "Pilates", "Spa"],
+    "hours": {
+      "club": {
+        "spans": [
+          { "day": 0, "open": "08:00", "close": "20:00" },
+          { "day": 1, "open": "06:00", "close": "21:00" },
+          { "day": 2, "open": "06:00", "close": "21:00" },
+          { "day": 3, "open": "06:00", "close": "21:00" },
+          { "day": 4, "open": "06:00", "close": "21:00" },
+          { "day": 5, "open": "06:00", "close": "21:00" },
+          { "day": 6, "open": "08:00", "close": "20:00" }
+        ]
+      },
+      "amenities": {}
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/sample-uptown",
+      "lastFetchedAt": "2026-02-07T00:00:00.000Z"
+    }
+  }
+]
