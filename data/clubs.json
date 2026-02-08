@@ -1,0 +1,7526 @@
+[
+  {
+    "id": "columbuscircle",
+    "slug": "columbuscircle",
+    "name": "Equinox Columbus Circle",
+    "address": {
+      "line1": "Deutsche Bank Center (60th and Broadway)",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10019"
+    },
+    "geo": {
+      "lat": 40.7686608,
+      "lng": -73.9826273
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Sauna",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Tier X Coaching",
+      "Physical Therapy",
+      "Indoor 25-Meter Saltwater Pool",
+      "Bodywork and Skincare Services at The Spa",
+      "E by Equinox",
+      "Eucalyptus Steam Rooms",
+      "Indoor Saltwater Lap Pool",
+      "Private Pilates Studio"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:00",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:00",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:00",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "20:00"
+          },
+          {
+            "day": 5,
+            "open": "05:00",
+            "close": "21:00"
+          },
+          {
+            "day": 1,
+            "open": "05:00",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:00 - 22:00",
+          "Tue 05:00 - 22:00",
+          "Wed 05:00 - 22:00",
+          "Sat 07:00 - 20:00",
+          "Fri 05:00 - 21:00",
+          "Mon 05:00 - 22:00",
+          "Sun 07:00 - 20:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "12:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 12:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 20:00",
+            "Tue 09:00 - 20:00",
+            "Wed 09:00 - 20:00",
+            "Sat 09:00 - 18:00",
+            "Fri 09:00 - 20:00",
+            "Mon 09:00 - 20:00",
+            "Sun 09:00 - 18:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/uptown/columbuscircle",
+      "lastFetchedAt": "2026-02-07T22:54:38.846Z"
+    }
+  },
+  {
+    "id": "east61st",
+    "slug": "east61st",
+    "name": "Equinox East 61st Street",
+    "address": {
+      "line1": "330 E 61st St",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10065"
+    },
+    "geo": {
+      "lat": 40.7610658,
+      "lng": -73.9619791
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Sauna",
+      "Basketball Court",
+      "Jacuzzi",
+      "Barre Studio",
+      "Kids Club",
+      "Squash Courts",
+      "Outdoor Terrace",
+      "Squash",
+      "Precision Run Treadmills",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Indoor 12-Meter (40 Ft) Chlorine Pool",
+      "Exec. Locker Rooms",
+      "Rock Climbing Wall",
+      "Tier X Coaching",
+      "Indoor Lap Pool",
+      "Pickleball Court",
+      "Rooftop Recreational Terrace"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 07:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Sun 07:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "kids": {
+          "spans": [
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "13:00"
+            }
+          ],
+          "raw": [
+            "Wed 09:00 - 13:00",
+            "Sat 09:00 - 13:00",
+            "Fri 09:00 - 13:00",
+            "Sun 09:00 - 13:00"
+          ]
+        },
+        "kids_club": {
+          "spans": [
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "13:00"
+            }
+          ],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed 09:00 AM - 01:00 PM",
+            "Thu closed",
+            "Fri - Sun 09:00 AM - 01:00 PM"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/uptown/east61st",
+      "lastFetchedAt": "2026-02-07T22:54:40.332Z"
+    }
+  },
+  {
+    "id": "east63rd",
+    "slug": "east63rd",
+    "name": "Equinox East 63rd Street",
+    "address": {
+      "line1": "817 Lexington Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10065"
+    },
+    "geo": {
+      "lat": 40.7644,
+      "lng": -73.966204
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Jacuzzi",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Tier X Coaching",
+      "Indoor 18-Meter Saltwater Pool",
+      "Cold / Hot Plunge",
+      "Jacob's Ladder",
+      "Hyperice Station",
+      "Cold Plunge",
+      "Hot Plunge",
+      "Bodywork and Skincare Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Indoor Saltwater Lap Pool with Hot and Cold Plunges",
+      "Private Pilates Studio"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "20:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "23:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 23:00",
+          "Tue 05:30 - 23:00",
+          "Sat 07:00 - 20:00",
+          "Wed 05:30 - 23:00",
+          "Fri 05:30 - 22:00",
+          "Sun 07:00 - 20:00",
+          "Mon 05:30 - 23:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 18:00",
+            "Sun 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "20:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 20:00",
+            "Tue 09:00 - 20:00",
+            "Sat 09:00 - 18:00",
+            "Wed 09:00 - 20:00",
+            "Fri 09:00 - 20:00",
+            "Sun 09:00 - 18:00",
+            "Mon 09:00 - 20:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/uptown/east63rd",
+      "lastFetchedAt": "2026-02-07T22:54:41.808Z"
+    }
+  },
+  {
+    "id": "east74th",
+    "slug": "east74th",
+    "name": "Equinox East 74th Street",
+    "address": {
+      "line1": "1429 2nd Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10021"
+    },
+    "geo": {
+      "lat": 40.77053,
+      "lng": -73.957461
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Kids Club",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Tier X Coaching",
+      "Jacob's Ladder",
+      "Hyperice Station",
+      "Kiosk",
+      "Bodywork and Skincare Services at The Spa featuring Infrared Saunas",
+      "Childcare Services at The Kids Club",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "19:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "19:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Sat 07:00 - 19:00",
+          "Fri 05:30 - 20:00",
+          "Mon 05:30 - 22:00",
+          "Sun 07:00 - 19:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "sales": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 20:00",
+            "Tue 09:00 - 20:00",
+            "Wed 09:00 - 20:00",
+            "Sat 10:00 - 17:00",
+            "Fri 09:00 - 19:00",
+            "Mon 09:00 - 20:00",
+            "Sun 10:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 3,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 10:00 - 20:00",
+            "Tue 10:00 - 20:00",
+            "Wed 10:00 - 20:00",
+            "Sat 10:00 - 18:00",
+            "Fri 10:00 - 19:00",
+            "Mon 10:00 - 20:00",
+            "Sun 10:00 - 18:00"
+          ]
+        },
+        "kids": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "13:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 13:00",
+            "Tue 09:00 - 13:00",
+            "Sat 09:00 - 13:00",
+            "Wed 09:00 - 13:00",
+            "Mon 09:00 - 13:00"
+          ]
+        },
+        "kids_club": {
+          "spans": [
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "13:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "13:00"
+            }
+          ],
+          "raw": [
+            "Mon - Thu 09:00 AM - 01:00 PM",
+            "Fri closed",
+            "Sat 09:00 AM - 01:00 PM",
+            "Sun closed"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/uptown/east74th",
+      "lastFetchedAt": "2026-02-07T22:54:43.275Z"
+    }
+  },
+  {
+    "id": "east85th",
+    "slug": "east85th",
+    "name": "Equinox East 85th Street",
+    "address": {
+      "line1": "203 East 85th St",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10028"
+    },
+    "geo": {
+      "lat": 40.7781098,
+      "lng": -73.9540043
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Bodywork and Skincare Services at The Spa",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 07:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Sun 07:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 2,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 3,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "12:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 10:00 - 19:00",
+            "Tue 10:00 - 20:00",
+            "Wed 10:00 - 19:00",
+            "Sat 10:00 - 18:00",
+            "Fri 10:00 - 19:00",
+            "Sun 10:00 - 18:00",
+            "Mon 12:00 - 18:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/uptown/east85th",
+      "lastFetchedAt": "2026-02-07T22:54:44.805Z"
+    }
+  },
+  {
+    "id": "east92nd",
+    "slug": "east92nd",
+    "name": "Equinox East 92nd Street",
+    "address": {
+      "line1": "203 East 92nd Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10128"
+    },
+    "geo": {
+      "lat": 40.782774,
+      "lng": -73.950511
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Barre Studio",
+      "Café",
+      "Heated Yoga Classes",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Tier X Coaching",
+      "Bodywork Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Heated Yoga Studio",
+      "Private Pilates Studio",
+      "The Playground by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 07:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Sun 07:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 18:00",
+            "Sun 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 2,
+              "open": "11:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "11:00",
+              "close": "17:00"
+            },
+            {
+              "day": 6,
+              "open": "11:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "11:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "11:00",
+              "close": "17:00"
+            },
+            {
+              "day": 0,
+              "open": "11:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Tue 11:00 - 17:00",
+            "Wed 11:00 - 17:00",
+            "Sat 11:00 - 17:00",
+            "Fri 11:00 - 17:00",
+            "Mon 11:00 - 17:00",
+            "Sun 11:00 - 17:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/uptown/east92nd",
+      "lastFetchedAt": "2026-02-07T22:54:46.321Z"
+    }
+  },
+  {
+    "id": "sportsclubnewyork",
+    "slug": "sportsclubnewyork",
+    "name": "Equinox Sports Club New York",
+    "address": {
+      "line1": "160 Columbus Ave",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10023"
+    },
+    "geo": {
+      "lat": 40.7747183,
+      "lng": -73.9813903
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Sauna",
+      "Basketball Court",
+      "Jacuzzi",
+      "Barre Studio",
+      "Kids Club",
+      "Outdoor Running Track",
+      "Rooftop Terrace",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Exec. Locker Rooms",
+      "Rock Climbing Wall",
+      "Tier X Coaching",
+      "Hyperice Station",
+      "Sidewalk Cafe",
+      "Indoor 23-Meter (75 Ft) Saltwater Pool",
+      "Rock Climbing",
+      "Indoor Saltwater Lap Pool with Hot Plunge",
+      "Outdoor Recreational Terrace",
+      "Pickleball Courts"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "21:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "21:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "23:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 23:00",
+          "Tue 05:30 - 23:00",
+          "Sat 07:00 - 21:00",
+          "Wed 05:30 - 23:00",
+          "Fri 05:30 - 22:00",
+          "Sun 07:00 - 21:00",
+          "Mon 05:30 - 23:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 18:00",
+            "Sun 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "07:30",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "07:30",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "07:30",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "07:30",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "07:30",
+              "close": "21:00"
+            },
+            {
+              "day": 1,
+              "open": "07:30",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "07:30",
+              "close": "21:00"
+            }
+          ],
+          "raw": [
+            "Thu 07:30 - 21:00",
+            "Tue 07:30 - 21:00",
+            "Wed 07:30 - 21:00",
+            "Sat 07:30 - 21:00",
+            "Fri 07:30 - 21:00",
+            "Mon 07:30 - 21:00",
+            "Sun 07:30 - 21:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/uptown/sportsclubnewyork",
+      "lastFetchedAt": "2026-02-07T22:54:47.802Z"
+    }
+  },
+  {
+    "id": "west76th",
+    "slug": "west76th",
+    "name": "Equinox West 76th Street",
+    "address": {
+      "line1": "344 Amsterdam Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10024"
+    },
+    "geo": {
+      "lat": 40.7814129,
+      "lng": -73.9819899
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Yoga Studio",
+      "Steam Room",
+      "Barre Studio",
+      "Kids Club",
+      "Heated Yoga Room",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Hyperice Station",
+      "Bodywork and Skincare Services at The Spa",
+      "Childcare Services at The Kids Club",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "20:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "21:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "20:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Sat 07:00 - 20:00",
+          "Fri 05:30 - 21:00",
+          "Mon 05:30 - 22:00",
+          "Sun 07:00 - 20:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "sales": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "20:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 20:00",
+            "Tue 09:00 - 20:00",
+            "Sat 09:00 - 18:00",
+            "Wed 09:00 - 20:00",
+            "Fri 09:00 - 19:00",
+            "Sun 09:00 - 18:00",
+            "Mon 09:00 - 20:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 2,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "10:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "10:00",
+              "close": "16:00"
+            }
+          ],
+          "raw": [
+            "Thu 10:00 - 19:00",
+            "Tue 10:00 - 18:00",
+            "Wed 10:00 - 21:00",
+            "Sat 10:00 - 18:00",
+            "Fri 09:00 - 18:00",
+            "Sun 09:00 - 18:00",
+            "Mon 10:00 - 16:00"
+          ]
+        },
+        "kids": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 2,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 3,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 5,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 1,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "14:00"
+            }
+          ],
+          "raw": [
+            "Thu 08:00 - 14:00",
+            "Tue 08:00 - 14:00",
+            "Wed 08:00 - 14:00",
+            "Sat 08:00 - 14:00",
+            "Fri 08:00 - 14:00",
+            "Mon 08:00 - 14:00",
+            "Sun 08:00 - 14:00"
+          ]
+        },
+        "kids_club": {
+          "spans": [
+            {
+              "day": 1,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 2,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 3,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 4,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 5,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "14:00"
+            }
+          ],
+          "raw": [
+            "Mon - Sun 08:00 AM - 02:00 PM"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/uptown/west76th",
+      "lastFetchedAt": "2026-02-07T22:54:49.470Z"
+    }
+  },
+  {
+    "id": "west92nd",
+    "slug": "west92nd",
+    "name": "Equinox West 92nd Street",
+    "address": {
+      "line1": "2465 Broadway",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10025"
+    },
+    "geo": {
+      "lat": 40.7919865,
+      "lng": -73.9742999
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Barre Studio",
+      "Kids Club",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Tier X Coaching",
+      "Lite Delite",
+      "Physical Therapy",
+      "Bodywork Services at The Spa",
+      "Childcare Services at The Kids Club",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "20:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "21:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 07:00 - 20:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 21:00",
+          "Sun 07:00 - 20:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "12:00",
+              "close": "19:00"
+            },
+            {
+              "day": 2,
+              "open": "13:00",
+              "close": "19:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "13:00",
+              "close": "19:00"
+            },
+            {
+              "day": 5,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "14:00",
+              "close": "20:00"
+            }
+          ],
+          "raw": [
+            "Thu 12:00 - 19:00",
+            "Tue 13:00 - 19:00",
+            "Sat 10:00 - 18:00",
+            "Wed 13:00 - 19:00",
+            "Fri 10:00 - 20:00",
+            "Sun 09:00 - 18:00",
+            "Mon 14:00 - 20:00"
+          ]
+        },
+        "kids": {
+          "spans": [
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "14:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "14:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "14:00"
+            }
+          ],
+          "raw": [
+            "Sat 08:00 - 14:00",
+            "Wed 09:00 - 14:00",
+            "Fri 09:00 - 14:00",
+            "Sun 08:00 - 14:00",
+            "Mon 09:00 - 14:00"
+          ]
+        },
+        "kids_club": {
+          "spans": [
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "14:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "14:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "14:00"
+            },
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "14:00"
+            }
+          ],
+          "raw": [
+            "Mon 09:00 AM - 02:00 PM",
+            "Tue closed",
+            "Wed 09:00 AM - 02:00 PM",
+            "Thu closed",
+            "Fri 09:00 AM - 02:00 PM",
+            "Sat - Sun 08:00 AM - 02:00 PM"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/uptown/west92nd",
+      "lastFetchedAt": "2026-02-07T22:54:51.318Z"
+    }
+  },
+  {
+    "id": "bryantpark",
+    "slug": "bryantpark",
+    "name": "Equinox Bryant Park",
+    "address": {
+      "line1": "129 West 41st Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10036"
+    },
+    "geo": {
+      "lat": 40.7548596,
+      "lng": -73.9854492
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Café",
+      "Heated Yoga Classes",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Tier X Coaching",
+      "Jacob's Ladder",
+      "Bodywork Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Heated Yoga Studio",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 21:00",
+            "Tue 09:00 - 21:00",
+            "Wed 09:00 - 21:00",
+            "Fri 09:00 - 21:00",
+            "Mon 09:00 - 21:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/midtown/bryantpark",
+      "lastFetchedAt": "2026-02-07T22:54:52.858Z"
+    }
+  },
+  {
+    "id": "east43rd",
+    "slug": "east43rd",
+    "name": "Equinox East 43rd Street",
+    "address": {
+      "line1": "521 Fifth Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10175"
+    },
+    "geo": {
+      "lat": 40.7541602,
+      "lng": -73.9797976
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Built-in Locks",
+      "Spa",
+      "Power Plate",
+      "Neverending Vending",
+      "Playground PGX",
+      "Locker Rentals with Laundry Service",
+      "Dedicated Cycling Studio",
+      "Eucalyptus Steam Rooms",
+      "The Playground by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/midtown/east43rd",
+      "lastFetchedAt": "2026-02-07T22:54:54.389Z"
+    }
+  },
+  {
+    "id": "east44th",
+    "slug": "east44th",
+    "name": "Equinox East 44th Street",
+    "address": {
+      "line1": "420 Lexington Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10170"
+    },
+    "geo": {
+      "lat": 40.7526842,
+      "lng": -73.9759022
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Power Plate",
+      "Exec. Locker Rooms - Mens Only",
+      "Bodywork Services at The Spa",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "Men's Executive Locker Room",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "18:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "18:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 08:00 - 18:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Sun 08:00 - 18:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "21:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 21:00",
+            "Tue 09:00 - 21:00",
+            "Wed 09:00 - 21:00",
+            "Sat 09:00 - 21:00",
+            "Fri 09:00 - 21:00",
+            "Mon 09:00 - 21:00",
+            "Sun 09:00 - 21:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/midtown/east44th",
+      "lastFetchedAt": "2026-02-07T22:54:56.001Z"
+    }
+  },
+  {
+    "id": "east53rd",
+    "slug": "east53rd",
+    "name": "Equinox East 53rd Street",
+    "address": {
+      "line1": "10 East 53rd Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10022"
+    },
+    "geo": {
+      "lat": 40.7597928,
+      "lng": -73.9753584
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Café",
+      "Heated Yoga Classes",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Tier X Coaching",
+      "Bodywork Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Heated Yoga Studio",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/midtown/east53rd",
+      "lastFetchedAt": "2026-02-07T22:54:57.561Z"
+    }
+  },
+  {
+    "id": "east54th",
+    "slug": "east54th",
+    "name": "Equinox East 54th Street",
+    "address": {
+      "line1": "250 East 54th Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10022"
+    },
+    "geo": {
+      "lat": 40.757383,
+      "lng": -73.967264
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Bodywork Services at The Spa",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Sun 08:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/midtown/east54th",
+      "lastFetchedAt": "2026-02-07T22:54:59.092Z"
+    }
+  },
+  {
+    "id": "hudsonyards",
+    "slug": "hudsonyards",
+    "name": "Equinox Hudson Yards",
+    "address": {
+      "line1": "32 Hudson Yards",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10001"
+    },
+    "geo": {
+      "lat": 40.7547,
+      "lng": -74.0038
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Jacuzzi",
+      "Barre Studio",
+      "Outdoor Terrace",
+      "Heated Yoga Classes",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Tier X Coaching",
+      "Indoor 25-Meter Saltwater Pool",
+      "Work Space/ Indoor Lounge",
+      "Sauna - Women's Only",
+      "Earth Bar",
+      "Outdoor Lounge Pool",
+      "Broken Coconut",
+      "E by Equinox",
+      "Heated Yoga Studio",
+      "Indoor Saltwater Lap Pool with Hot and Cold Plunges",
+      "Laundry Valet Service",
+      "Outdoor Rooftop Terrace and Recreational Pool"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "21:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "21:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "23:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 23:00",
+          "Tue 05:30 - 23:00",
+          "Sat 07:00 - 21:00",
+          "Wed 05:30 - 23:00",
+          "Fri 05:30 - 22:00",
+          "Sun 07:00 - 21:00",
+          "Mon 05:30 - 23:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "sales": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "19:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 19:00",
+            "Tue 09:00 - 19:00",
+            "Sat 09:00 - 17:00",
+            "Wed 09:00 - 19:00",
+            "Fri 09:00 - 19:00",
+            "Sun 09:00 - 17:00",
+            "Mon 09:00 - 19:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 3,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 5,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 1,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "20:00"
+            }
+          ],
+          "raw": [
+            "Thu 10:00 - 20:00",
+            "Tue 10:00 - 20:00",
+            "Wed 10:00 - 20:00",
+            "Sat 10:00 - 20:00",
+            "Fri 10:00 - 20:00",
+            "Mon 10:00 - 20:00",
+            "Sun 10:00 - 20:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/midtown/hudsonyards",
+      "lastFetchedAt": "2026-02-07T22:55:00.827Z"
+    }
+  },
+  {
+    "id": "park",
+    "slug": "park",
+    "name": "Equinox Park Avenue",
+    "address": {
+      "line1": "1 Park Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10016"
+    },
+    "geo": {
+      "lat": 40.745885,
+      "lng": -73.9815182
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Tier X Coaching",
+      "Infrared Sauna(Higher Dose)",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "Recovery Lounge by The Spa at Equinox",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Fri 05:30 - 20:00",
+          "Mon 05:30 - 22:00",
+          "Sun 08:00 - 19:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "08:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "08:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "08:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "08:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 08:00 - 18:00",
+            "Tue 08:00 - 18:00",
+            "Wed 08:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 08:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "sales": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "20:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 20:00",
+            "Tue 09:00 - 20:00",
+            "Sat 09:00 - 17:00",
+            "Wed 09:00 - 20:00",
+            "Fri 09:00 - 18:00",
+            "Sun 09:00 - 17:00",
+            "Mon 09:00 - 20:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "07:30",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "07:30",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "07:30",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "07:30",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "07:30",
+              "close": "21:00"
+            }
+          ],
+          "raw": [
+            "Thu 07:30 - 21:00",
+            "Tue 07:30 - 21:00",
+            "Sat 10:00 - 18:00",
+            "Wed 07:30 - 21:00",
+            "Fri 07:30 - 19:00",
+            "Sun 10:00 - 18:00",
+            "Mon 07:30 - 21:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/midtown/park",
+      "lastFetchedAt": "2026-02-07T22:55:02.365Z"
+    }
+  },
+  {
+    "id": "rockefeller",
+    "slug": "rockefeller",
+    "name": "Equinox Rockefeller Center",
+    "address": {
+      "line1": "45 Rockefeller Plaza",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10111"
+    },
+    "geo": {
+      "lat": 40.7591523,
+      "lng": -73.9777136
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Sauna",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Exec. Locker Rooms",
+      "Physical Therapy",
+      "Infrared Sauna(Higher Dose)",
+      "EQX Cafe",
+      "Bookable Confrence Room",
+      "Bodywork and Skincare Services at The Spa featuring Infrared Saunas",
+      "Coworking Lounge with Conference Rooms",
+      "Men's and Women's Executive Locker Rooms",
+      "Private Pilates Studio"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "11:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "11:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "11:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "11:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 11:00 - 18:00",
+            "Tue 11:00 - 18:00",
+            "Wed 11:00 - 18:00",
+            "Fri 09:00 - 18:00",
+            "Mon 11:00 - 18:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/midtown/rockefeller",
+      "lastFetchedAt": "2026-02-07T22:55:03.901Z"
+    }
+  },
+  {
+    "id": "west50th",
+    "slug": "west50th",
+    "name": "Equinox West 50th Street",
+    "address": {
+      "line1": "1633 Broadway",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10019"
+    },
+    "geo": {
+      "lat": 40.7621098,
+      "lng": -73.9846411
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Bodywork Services at The Spa",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "18:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "18:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Sat 08:00 - 18:00",
+          "Fri 05:30 - 20:00",
+          "Mon 05:30 - 22:00",
+          "Sun 08:00 - 18:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/midtown/west50th",
+      "lastFetchedAt": "2026-02-07T22:55:05.557Z"
+    }
+  },
+  {
+    "id": "bondst",
+    "slug": "bondst",
+    "name": "Equinox Bond Street",
+    "address": {
+      "line1": "0 Bond Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10012"
+    },
+    "geo": {
+      "lat": 40.727238,
+      "lng": -73.9947959
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Barre Studio",
+      "Café",
+      "Heated Yoga Classes",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Tier X Coaching",
+      "Bodywork Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Heated Yoga Studio",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Fri 05:30 - 20:00",
+          "Mon 05:30 - 22:00",
+          "Sun 08:00 - 19:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "12:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 12:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "21:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 21:00",
+            "Tue 09:00 - 21:00",
+            "Wed 09:00 - 21:00",
+            "Sat 09:00 - 21:00",
+            "Fri 09:00 - 21:00",
+            "Mon 09:00 - 21:00",
+            "Sun 09:00 - 21:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/bondst",
+      "lastFetchedAt": "2026-02-07T22:55:06.992Z"
+    }
+  },
+  {
+    "id": "brookfieldplace",
+    "slug": "brookfieldplace",
+    "name": "Equinox Brookfield Place",
+    "address": {
+      "line1": "225 Liberty Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10281"
+    },
+    "geo": {
+      "lat": 40.7119835,
+      "lng": -74.0152643
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Barre Studio",
+      "Heated Yoga Classes",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Tier X Coaching",
+      "Physical Therapy",
+      "Jacob's Ladder",
+      "Exec. Locker Rooms - Mens Only",
+      "Bodywork and LightStim Services at The Spa",
+      "Heated Yoga Studio",
+      "Men's Executive Locker Room",
+      "Private Pilates Studio"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "21:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 21:00",
+          "Sun 08:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "16:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "16:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 16:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 16:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 2,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 5,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "10:00",
+              "close": "19:00"
+            }
+          ],
+          "raw": [
+            "Thu 10:00 - 19:00",
+            "Tue 10:00 - 19:00",
+            "Sat 10:00 - 17:00",
+            "Wed 10:00 - 19:00",
+            "Fri 10:00 - 19:00",
+            "Sun 10:00 - 17:00",
+            "Mon 10:00 - 19:00"
+          ]
+        },
+        "kids": {
+          "spans": [
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 5,
+              "open": "08:00",
+              "close": "14:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "14:00"
+            }
+          ],
+          "raw": [
+            "Sat 08:00 - 14:00",
+            "Fri 08:00 - 14:00",
+            "Sun 08:00 - 14:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/brookfieldplace",
+      "lastFetchedAt": "2026-02-07T22:55:08.565Z"
+    }
+  },
+  {
+    "id": "flatiron",
+    "slug": "flatiron",
+    "name": "Equinox Flatiron",
+    "address": {
+      "line1": "897  Broadway",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10003"
+    },
+    "geo": {
+      "lat": 40.7390882,
+      "lng": -73.9900893
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Bodywork Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "20:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "23:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 23:00",
+          "Tue 05:30 - 23:00",
+          "Sat 08:00 - 20:00",
+          "Wed 05:30 - 23:00",
+          "Fri 05:30 - 22:00",
+          "Sun 08:00 - 20:00",
+          "Mon 05:30 - 23:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "05:30",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "05:30",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 3,
+              "open": "05:30",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "06:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "05:30",
+              "close": "21:00"
+            }
+          ],
+          "raw": [
+            "Thu 05:30 - 21:00",
+            "Tue 05:30 - 21:00",
+            "Sat 09:00 - 19:00",
+            "Wed 05:30 - 21:00",
+            "Fri 06:00 - 21:00",
+            "Sun 09:00 - 19:00",
+            "Mon 05:30 - 21:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/flatiron",
+      "lastFetchedAt": "2026-02-07T22:55:10.165Z"
+    }
+  },
+  {
+    "id": "gramercy",
+    "slug": "gramercy",
+    "name": "Equinox Gramercy",
+    "address": {
+      "line1": "315 Park Avenue South",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10010"
+    },
+    "geo": {
+      "lat": 40.7404924,
+      "lng": -73.9856205
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Café",
+      "Heated Yoga Classes",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Hyperice Station",
+      "Bodywork Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Heated Yoga Studio",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "21:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 21:00",
+          "Sun 08:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 18:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "14:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "11:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "13:00",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "14:00",
+              "close": "21:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 14:00 - 21:00",
+            "Tue 11:00 - 21:00",
+            "Sat 10:00 - 18:00",
+            "Wed 13:00 - 21:00",
+            "Fri 14:00 - 21:00",
+            "Mon 09:00 - 21:00",
+            "Sun 10:00 - 18:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/gramercy",
+      "lastFetchedAt": "2026-02-07T22:55:12.181Z"
+    }
+  },
+  {
+    "id": "greenwichave",
+    "slug": "greenwichave",
+    "name": "Equinox Greenwich Avenue",
+    "address": {
+      "line1": "97 Greenwich Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10014"
+    },
+    "geo": {
+      "lat": 40.737496,
+      "lng": -74.002017
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Tier X Coaching",
+      "Hyperice Station",
+      "Indoor 23-Meter Saltwater Pool",
+      "Bodywork and Skincare Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Indoor Saltwater Lap Pool",
+      "Private Pilates Studio"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "21:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 23:00",
+          "Tue 05:30 - 23:00",
+          "Wed 05:30 - 23:00",
+          "Sat 08:00 - 21:00",
+          "Fri 05:30 - 22:00",
+          "Mon 05:30 - 23:00",
+          "Sun 08:00 - 21:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "12:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 12:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 18:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "11:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "12:00",
+              "close": "20:00"
+            },
+            {
+              "day": 3,
+              "open": "10:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "12:00",
+              "close": "20:00"
+            }
+          ],
+          "raw": [
+            "Thu 11:00 - 20:00",
+            "Tue 12:00 - 20:00",
+            "Wed 10:00 - 20:00",
+            "Sat 10:00 - 19:00",
+            "Fri 09:00 - 21:00",
+            "Sun 10:00 - 19:00",
+            "Mon 12:00 - 20:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/greenwichave",
+      "lastFetchedAt": "2026-02-07T22:55:13.667Z"
+    }
+  },
+  {
+    "id": "highline",
+    "slug": "highline",
+    "name": "Equinox High Line",
+    "address": {
+      "line1": "100 Tenth Avenue",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10011"
+    },
+    "geo": {
+      "lat": 40.7438299,
+      "lng": -74.0067247
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Tier X Coaching",
+      "Infrared Sauna(Higher Dose)",
+      "Bodywork Services at The Spa featuring Infrared Saunas",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Fri 05:30 - 20:00",
+          "Mon 05:30 - 22:00",
+          "Sun 08:00 - 19:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "08:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "08:00",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "08:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "08:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 08:00 - 21:00",
+            "Tue 08:00 - 21:00",
+            "Wed 08:00 - 21:00",
+            "Sat 08:00 - 18:00",
+            "Fri 08:00 - 19:00",
+            "Mon 08:00 - 21:00",
+            "Sun 08:00 - 18:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/highline",
+      "lastFetchedAt": "2026-02-07T22:55:15.183Z"
+    }
+  },
+  {
+    "id": "orchardst",
+    "slug": "orchardst",
+    "name": "Equinox Orchard Street",
+    "address": {
+      "line1": "200 Orchard Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10002"
+    },
+    "geo": {
+      "lat": 40.722267,
+      "lng": -73.987821
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Barre Studio",
+      "Heated Yoga Classes",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Kiosk",
+      "Bodywork Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Heated Yoga Studio",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "20:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "20:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "23:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 23:00",
+          "Tue 05:30 - 23:00",
+          "Sat 08:00 - 20:00",
+          "Wed 05:30 - 23:00",
+          "Fri 05:30 - 22:00",
+          "Sun 08:00 - 20:00",
+          "Mon 05:30 - 23:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "sales": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "20:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 20:00",
+            "Tue 09:00 - 20:00",
+            "Wed 09:00 - 20:00",
+            "Fri 09:00 - 19:00",
+            "Mon 09:00 - 20:00"
+          ]
+        },
+        "spa": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/orchardst",
+      "lastFetchedAt": "2026-02-07T22:55:16.798Z"
+    }
+  },
+  {
+    "id": "printinghouse",
+    "slug": "printinghouse",
+    "name": "Equinox Printing House",
+    "address": {
+      "line1": "421 Hudson St.",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10014"
+    },
+    "geo": {
+      "lat": 40.7298841,
+      "lng": -74.0072519
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Outdoor Terrace",
+      "Café",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Tier X Coaching",
+      "Hyperice Station",
+      "Outdoor 7-Meter Chlorine Pool (Seasonal)",
+      "Bodywork Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Outdoor Rooftop Terrace and Recreational Pool (Seasonal)",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Sun 08:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "16:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "16:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 16:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 16:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "21:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 21:00",
+            "Tue 09:00 - 21:00",
+            "Wed 09:00 - 21:00",
+            "Sat 09:00 - 21:00",
+            "Fri 09:00 - 21:00",
+            "Mon 09:00 - 21:00",
+            "Sun 09:00 - 21:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/printinghouse",
+      "lastFetchedAt": "2026-02-07T22:55:18.308Z"
+    }
+  },
+  {
+    "id": "soho",
+    "slug": "soho",
+    "name": "Equinox SoHo",
+    "address": {
+      "line1": "69 Prince Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10012"
+    },
+    "geo": {
+      "lat": 40.7240841,
+      "lng": -73.9970289
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Tier X Coaching",
+      "Hyperice Station",
+      "Juice Generation",
+      "Bodywork and Skincare Services at The Spa",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Sun 08:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "12:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 12:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Sun 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 21:00",
+            "Tue 09:00 - 21:00",
+            "Wed 09:00 - 21:00",
+            "Sat 08:00 - 18:00",
+            "Fri 09:00 - 19:00",
+            "Mon 09:00 - 21:00",
+            "Sun 08:00 - 18:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/soho",
+      "lastFetchedAt": "2026-02-07T22:55:19.874Z"
+    }
+  },
+  {
+    "id": "tribeca",
+    "slug": "tribeca",
+    "name": "Equinox Tribeca",
+    "address": {
+      "line1": "54 Murray Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10007"
+    },
+    "geo": {
+      "lat": 40.7141901,
+      "lng": -74.0100543
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Kids Club",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Power Plate",
+      "Tier X Coaching",
+      "Physical Therapy",
+      "Infrared Sauna(Higher Dose)",
+      "Locker Rentals with Laundry Service",
+      "Bodywork Services at The Spa featuring Infrared Saunas",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "18:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "20:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "18:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 08:00 - 18:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 20:00",
+          "Sun 08:00 - 18:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "12:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "16:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "16:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 12:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 16:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 16:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 21:00",
+            "Tue 09:00 - 21:00",
+            "Wed 09:00 - 21:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 19:00",
+            "Mon 09:00 - 21:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "kids": {
+          "spans": [
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "14:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "14:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "14:00"
+            }
+          ],
+          "raw": [
+            "Sat 09:00 - 14:00",
+            "Fri 09:00 - 14:00",
+            "Sun 09:00 - 14:00"
+          ]
+        },
+        "kids_club": {
+          "spans": [
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "14:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "14:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "14:00"
+            }
+          ],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri - Sun 09:00 AM - 02:00 PM"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/tribeca",
+      "lastFetchedAt": "2026-02-07T22:55:21.457Z"
+    }
+  },
+  {
+    "id": "wallstreet",
+    "slug": "wallstreet",
+    "name": "Equinox Wall Street",
+    "address": {
+      "line1": "14 Wall Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10005"
+    },
+    "geo": {
+      "lat": 40.7076346,
+      "lng": -74.0107748
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Boxing Studio",
+      "Steam Room",
+      "Jacuzzi",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Tier X Coaching",
+      "Co-Ed Sauna",
+      "Hyperice Station",
+      "Bodywork and TheraLight Services at The Spa",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "21:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Fri 05:30 - 21:00",
+          "Mon 05:30 - 22:00",
+          "Sun 08:00 - 19:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Wed 09:00 - 18:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 21:00",
+            "Tue 09:00 - 21:00",
+            "Wed 09:00 - 21:00",
+            "Sat 10:00 - 17:00",
+            "Fri 09:00 - 19:00",
+            "Mon 09:00 - 21:00",
+            "Sun 10:00 - 17:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/wallstreet",
+      "lastFetchedAt": "2026-02-07T22:55:23.034Z"
+    }
+  },
+  {
+    "id": "nomad",
+    "slug": "nomad",
+    "name": "Equinox Nomad",
+    "address": {
+      "line1": "31 West 27th Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10010"
+    },
+    "geo": {
+      "lat": 40.7449018,
+      "lng": -73.9894613
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Barre Studio",
+      "Café",
+      "Heated Yoga Classes",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Tier X Coaching",
+      "Hyperice Station",
+      "Bodywork and Skincare Services at The Spa",
+      "Eucalyptus Steam Rooms",
+      "Heated Yoga Studio",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "21:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 21:00",
+          "Sun 08:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Sat 09:00 - 18:00",
+            "Fri 09:00 - 19:00",
+            "Sun 09:00 - 18:00"
+          ]
+        },
+        "sales": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 2,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 5,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "08:00",
+              "close": "19:00"
+            }
+          ],
+          "raw": [
+            "Thu 08:00 - 19:00",
+            "Tue 08:00 - 19:00",
+            "Sat 09:00 - 17:00",
+            "Wed 08:00 - 19:00",
+            "Fri 08:00 - 19:00",
+            "Sun 09:00 - 17:00",
+            "Mon 08:00 - 19:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 21:00",
+            "Tue 09:00 - 21:00",
+            "Wed 09:00 - 21:00",
+            "Sat 09:00 - 18:00",
+            "Fri 09:00 - 20:00",
+            "Mon 09:00 - 21:00",
+            "Sun 09:00 - 18:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/nomad",
+      "lastFetchedAt": "2026-02-07T22:55:24.602Z"
+    }
+  },
+  {
+    "id": "hudson-square",
+    "slug": "hudson-square",
+    "name": "Equinox Hudson Square",
+    "address": {
+      "line1": "75 Varick St.",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10013"
+    },
+    "geo": {
+      "lat": 40.7249946,
+      "lng": -74.0098644
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "21:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "19:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Sat 08:00 - 19:00",
+          "Wed 05:30 - 22:00",
+          "Fri 05:30 - 21:00",
+          "Sun 08:00 - 19:00",
+          "Mon 05:30 - 22:00"
+        ]
+      },
+      "amenities": {
+        "sales": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 2,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 3,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "08:00",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 08:00 - 19:00",
+            "Tue 08:00 - 19:00",
+            "Wed 08:00 - 19:00",
+            "Sat 09:00 - 17:00",
+            "Fri 08:00 - 19:00",
+            "Mon 08:00 - 19:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/downtown/hudson-square",
+      "lastFetchedAt": "2026-02-07T22:55:26.053Z"
+    }
+  },
+  {
+    "id": "brooklynheights",
+    "slug": "brooklynheights",
+    "name": "Equinox Brooklyn Heights",
+    "address": {
+      "line1": "194 Joralemon Street",
+      "city": "Brooklyn",
+      "state": "NY",
+      "postalCode": "11201"
+    },
+    "geo": {
+      "lat": 40.6924762,
+      "lng": -73.9915209
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Kids Club",
+      "Precision Run Treadmills",
+      "Shop",
+      "Spa",
+      "Private Pilates",
+      "Bodywork and Skincare Services at The Spa",
+      "Dedicated Cycling and Yoga Studios",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "19:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "21:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "19:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Sat 07:00 - 19:00",
+          "Fri 05:30 - 21:00",
+          "Mon 05:30 - 22:00",
+          "Sun 07:00 - 19:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "19:30"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "19:30"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "19:30"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:30"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "19:30"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 19:30",
+            "Tue 09:00 - 19:30",
+            "Wed 09:00 - 19:30",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 19:30",
+            "Mon 09:00 - 19:30",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "sales": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 20:00",
+            "Tue 09:00 - 20:00",
+            "Wed 09:00 - 20:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 19:00",
+            "Mon 09:00 - 20:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 2,
+              "open": "15:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 3,
+              "open": "11:00",
+              "close": "19:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "11:00",
+              "close": "19:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 19:00",
+            "Tue 15:00 - 20:00",
+            "Sat 09:00 - 17:00",
+            "Wed 11:00 - 19:00",
+            "Fri 09:00 - 19:00",
+            "Sun 09:00 - 17:00",
+            "Mon 11:00 - 19:00"
+          ]
+        },
+        "kids": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 2,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 3,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 5,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 1,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "12:00"
+            }
+          ],
+          "raw": [
+            "Thu 08:00 - 12:00",
+            "Tue 08:00 - 12:00",
+            "Wed 08:00 - 12:00",
+            "Sat 08:00 - 12:00",
+            "Fri 08:00 - 12:00",
+            "Mon 08:00 - 12:00",
+            "Sun 08:00 - 12:00"
+          ]
+        },
+        "kids_club": {
+          "spans": [
+            {
+              "day": 1,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 2,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 3,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 4,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 5,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "12:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "12:00"
+            }
+          ],
+          "raw": [
+            "Mon - Sun 08:00 AM - 12:00 PM"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/brooklyn/brooklynheights",
+      "lastFetchedAt": "2026-02-07T22:55:27.619Z"
+    }
+  },
+  {
+    "id": "dumbo",
+    "slug": "dumbo",
+    "name": "Equinox DUMBO",
+    "address": {
+      "line1": "117 Front Street",
+      "city": "Brooklyn",
+      "state": "NY",
+      "postalCode": "11201"
+    },
+    "geo": {
+      "lat": 40.702853,
+      "lng": -73.9890795
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Power Plate",
+      "Bodywork and LightStim Services at The Spa",
+      "Dedicated Cycling Studio",
+      "Eucalyptus Steam Rooms",
+      "Private Pilates Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 6,
+            "open": "07:00",
+            "close": "19:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "21:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 0,
+            "open": "07:00",
+            "close": "19:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 22:00",
+          "Tue 05:30 - 22:00",
+          "Wed 05:30 - 22:00",
+          "Sat 07:00 - 19:00",
+          "Fri 05:30 - 21:00",
+          "Mon 05:30 - 22:00",
+          "Sun 07:00 - 19:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "12:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "16:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "16:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 12:00",
+            "Tue 09:00 - 18:00",
+            "Sat 09:00 - 16:00",
+            "Fri 09:00 - 17:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 16:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "06:30",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "06:30",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "08:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "06:30",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "06:30",
+              "close": "20:00"
+            },
+            {
+              "day": 0,
+              "open": "08:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "06:30",
+              "close": "21:00"
+            }
+          ],
+          "raw": [
+            "Thu 06:30 - 21:00",
+            "Tue 06:30 - 21:00",
+            "Sat 08:00 - 18:00",
+            "Wed 06:30 - 21:00",
+            "Fri 06:30 - 20:00",
+            "Sun 08:00 - 18:00",
+            "Mon 06:30 - 21:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/brooklyn/dumbo",
+      "lastFetchedAt": "2026-02-07T22:55:29.063Z"
+    }
+  },
+  {
+    "id": "williamsburg",
+    "slug": "williamsburg",
+    "name": "Equinox Williamsburg",
+    "address": {
+      "line1": "246 Bedford Ave",
+      "city": "Brooklyn",
+      "state": "NY",
+      "postalCode": "11211"
+    },
+    "geo": {
+      "lat": 40.715846,
+      "lng": -73.959883
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Coat Check",
+      "Barre Studio",
+      "Café",
+      "Heated Yoga Classes",
+      "Precision Run Treadmills",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Power Plate",
+      "Tier X Coaching",
+      "Cryotherapy",
+      "Float Tank",
+      "Locker Rentals with Laundry Service",
+      "Cryotherapy and Float Tank at The Spa featuring Recovery Haus",
+      "Eucalyptus Steam Rooms",
+      "Heated Yoga Studio",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "20:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 23:00",
+          "Tue 05:30 - 23:00",
+          "Wed 05:30 - 23:00",
+          "Sat 08:00 - 20:00",
+          "Fri 05:30 - 22:00",
+          "Mon 05:30 - 23:00",
+          "Sun 08:00 - 20:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "17:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "17:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 18:00",
+            "Tue 09:00 - 18:00",
+            "Wed 09:00 - 18:00",
+            "Sat 09:00 - 17:00",
+            "Fri 09:00 - 18:00",
+            "Mon 09:00 - 18:00",
+            "Sun 09:00 - 17:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 2,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 6,
+              "open": "10:00",
+              "close": "14:00"
+            },
+            {
+              "day": 3,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 5,
+              "open": "10:00",
+              "close": "18:00"
+            },
+            {
+              "day": 0,
+              "open": "10:00",
+              "close": "14:00"
+            },
+            {
+              "day": 1,
+              "open": "10:00",
+              "close": "18:00"
+            }
+          ],
+          "raw": [
+            "Thu 10:00 - 18:00",
+            "Tue 10:00 - 18:00",
+            "Sat 10:00 - 14:00",
+            "Wed 10:00 - 18:00",
+            "Fri 10:00 - 18:00",
+            "Sun 10:00 - 14:00",
+            "Mon 10:00 - 18:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/brooklyn/williamsburg",
+      "lastFetchedAt": "2026-02-07T22:55:30.561Z"
+    }
+  },
+  {
+    "id": "domino",
+    "slug": "domino",
+    "name": "Equinox Domino",
+    "address": {
+      "line1": "24 River St",
+      "city": "Brooklyn",
+      "state": "NY",
+      "postalCode": "11249"
+    },
+    "geo": {
+      "lat": 40.713983,
+      "lng": -73.9683593
+    },
+    "timezone": "Eastern Standard Time",
+    "amenities": [
+      "Steam Room",
+      "Heated Yoga Classes",
+      "Shop",
+      "Built-in Locks",
+      "Spa",
+      "Private Pilates",
+      "Co-Ed Sauna",
+      "Cold / Hot Plunge",
+      "Hyperice Station",
+      "Work Space/ Indoor Lounge",
+      "Indoor 75-Foot Pool",
+      "Aescape X Equinox",
+      "Cold Plunge",
+      "Hot Plunge",
+      "NutriDrip",
+      "Halo + Red Light Therapy",
+      "Pool",
+      "Hot/Cold Plunge",
+      "The Shop by Equinox"
+    ],
+    "hours": {
+      "club": {
+        "spans": [
+          {
+            "day": 4,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 2,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 3,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 6,
+            "open": "08:00",
+            "close": "21:00"
+          },
+          {
+            "day": 5,
+            "open": "05:30",
+            "close": "22:00"
+          },
+          {
+            "day": 1,
+            "open": "05:30",
+            "close": "23:00"
+          },
+          {
+            "day": 0,
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "raw": [
+          "Thu 05:30 - 23:00",
+          "Tue 05:30 - 23:00",
+          "Wed 05:30 - 23:00",
+          "Sat 08:00 - 21:00",
+          "Fri 05:30 - 22:00",
+          "Mon 05:30 - 23:00",
+          "Sun 08:00 - 21:00"
+        ]
+      },
+      "amenities": {
+        "appointment_hours": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "19:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "18:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "20:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 20:00",
+            "Tue 09:00 - 20:00",
+            "Sat 09:00 - 18:00",
+            "Wed 09:00 - 20:00",
+            "Fri 09:00 - 19:00",
+            "Sun 09:00 - 18:00",
+            "Mon 09:00 - 20:00"
+          ]
+        },
+        "spa": {
+          "spans": [
+            {
+              "day": 4,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 2,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 6,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 3,
+              "open": "09:00",
+              "close": "21:00"
+            },
+            {
+              "day": 5,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 0,
+              "open": "09:00",
+              "close": "20:00"
+            },
+            {
+              "day": 1,
+              "open": "09:00",
+              "close": "21:00"
+            }
+          ],
+          "raw": [
+            "Thu 09:00 - 21:00",
+            "Tue 09:00 - 21:00",
+            "Sat 09:00 - 20:00",
+            "Wed 09:00 - 21:00",
+            "Fri 09:00 - 20:00",
+            "Sun 09:00 - 20:00",
+            "Mon 09:00 - 21:00"
+          ]
+        },
+        "shop": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        },
+        "sales": {
+          "spans": [],
+          "raw": [
+            "Mon closed",
+            "Tue closed",
+            "Wed closed",
+            "Thu closed",
+            "Fri closed",
+            "Sat closed",
+            "Sun closed"
+          ]
+        }
+      }
+    },
+    "source": {
+      "url": "https://www.equinox.com/clubs/new-york/brooklyn/domino",
+      "lastFetchedAt": "2026-02-07T22:55:31.986Z"
+    }
+  }
+]
