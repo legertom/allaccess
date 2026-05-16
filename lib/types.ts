@@ -20,6 +20,9 @@ export type Address = {
   city: string;
   state: string;
   postalCode: string;
+  // Optional only during the NYC->national migration window. The shipped
+  // national artifact requires this for every emitted club (CTO condition 5).
+  country?: string; // ISO-3166-1 alpha-2: "US" | "CA" | "GB"
 };
 
 export type GeoPoint = {
@@ -33,6 +36,9 @@ export type Club = {
   name: string;
   address: Address;
   geo?: GeoPoint;
+  // Optional only during migration; required in the national artifact.
+  region?: string; // metro slug from the club URL path, e.g. "los-angeles"
+  regionLabel?: string; // display label, e.g. "Los Angeles"
   timezone: string;
   amenities: string[];
   hours: ClubHours;

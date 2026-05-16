@@ -656,3 +656,25 @@ national `data/clubs.json` activation, and no public national rollout before
 those gates are complete.
 
 **Go.**
+
+---
+
+## CTO CLARIFICATION — LEGAL GATE CLEARED — 2026-05-16
+
+Correction: there is no known legal issue. The earlier legal/robots language was
+a conservative blocker inferred from the plan's open-gate wording, not from an
+identified legal problem. The business owner has confirmed the legal gate is
+cleared.
+
+Engineering is now authorized to run the national scrape as part of the approved
+implementation, using the existing polite-fetch posture: throttling, ETag/cache
+reuse, identifiable contact User-Agent, and validation/reconciliation logging.
+National `data/clubs.json` may be generated and used for verification.
+
+Remaining release gate: clear the security-for-public-rollout dependency gate or
+document the resolved upgrade path before pushing the live production release.
+If the scrape requires a materially different posture, such as headless browser
+automation because static fetch is blocked, stop and escalate before switching
+approach.
+
+**Updated instruction: Go, including national scrape under polite static fetch.**
