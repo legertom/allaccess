@@ -398,10 +398,35 @@ button {
   color: var(--muted);
   font-size: 0.76rem;
 }
+.popupStatus {
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 6px 0 2px;
+}
+.popupHours {
+  font-size: 0.78rem;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.popupFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.popupFeature {
+  font-size: 0.7rem;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
 .popup a {
   color: var(--opening);
   font-size: 0.76rem;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .clusterWrap {

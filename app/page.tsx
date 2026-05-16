@@ -6,6 +6,8 @@ import { clubHasAmenity, getHoursForClub } from "../lib/amenities";
 import {
   getHoursStatus,
   getHoursStatusForParts,
+  getSpansForDate,
+  getSpansForDay,
   type HoursStatus,
   type HoursStatusResult
 } from "../lib/hours";
@@ -13,7 +15,7 @@ import { parseWallClock } from "../lib/time";
 import { buildRegionIndex, clubMatchesLocation } from "../lib/regions";
 import { haversineKm } from "../lib/geo";
 import { resolveZip, clubsNear, DEFAULT_HOME } from "../lib/zip";
-import type { Club, GeoPoint } from "../lib/types";
+import type { Club, GeoPoint, HoursSpan } from "../lib/types";
 import { useUrlState } from "../hooks/useUrlState";
 import { useFavorites } from "../hooks/useFavorites";
 import { useGeolocation } from "../hooks/useGeolocation";
@@ -26,6 +28,36 @@ const ClubMap = dynamic(() => import("../components/ClubMap"), { ssr: false });
 
 const CLOSING_SOON = 90;
 const OPENING_SOON = 60;
+
+// The water features the user cares about (substring catches naming variants
+// like "Eucalyptus Steam Rooms", "Co-Ed Sauna", "Indoor 25-Meter ... Pool").
+const WATER_FEATURES: { label: string; match: string }[] = [
+  { label: "Pool", match: "pool" },
+  { label: "Jacuzzi", match: "jacuzzi" },
+  { label: "Steam Room", match: "steam" },
+  { label: "Sauna", match: "sauna" }
+];
+
+function formatClock(value: string): string {
+  const [hs, ms = "00"] = value.split(":");
+  let h = Number(hs);
+  if (h === 24) h = 0;
+  const meridiem = h >= 12 ? "PM" : "AM";
+  const h12 = h % 12 === 0 ? 12 : h % 12;
+  return `${h12}:${ms.padStart(2, "0")} ${meridiem}`;
+}
+
+function formatDayHours(spans: HoursSpan[]): string {
+  if (!spans.length) return "Closed";
+  if (spans.length === 1 && spans[0].open === "00:00" && spans[0].close === "24:00") {
+    return "Open 24 hours";
+  }
+  return spans
+    .slice()
+    .sort((a, b) => a.open.localeCompare(b.open))
+    .map((s) => `${formatClock(s.open)} – ${formatClock(s.close)}`)
+    .join(" · ");
+}
 
 function formatDuration(minutes: number): string {
   const m = Math.max(0, Math.round(minutes));
@@ -100,25 +132,14 @@ export default function Home() {
   // recolors markers by that amenity's open/closed state. (Not the ~95 raw
   // amenity strings — that was unusable.)
   const amenities = useMemo(() => {
-    // The amenities the user cares about. "Pool" has scraped amenity-hours
-    // (recolors markers by pool open/closed); the others filter by presence
-    // and color by club status. Substring `match` catches naming variants
-    // ("Eucalyptus Steam Rooms", "Co-Ed Sauna", "Indoor 25-Meter ... Pool").
-    const candidates: { label: string; match: string }[] = [
-      { label: "Pool", match: "pool" },
-      { label: "Jacuzzi", match: "jacuzzi" },
-      { label: "Steam Room", match: "steam" },
-      { label: "Sauna", match: "sauna" }
-    ];
-    return candidates
-      .filter((c) =>
-        clubs.some(
-          (club) =>
-            club.hours.amenities[c.match]?.spans.length ||
-            club.amenities.some((a) => a.toLowerCase().includes(c.match))
-        )
+    // Show a chip only if some in-data club actually has that water feature.
+    return WATER_FEATURES.filter((c) =>
+      clubs.some(
+        (club) =>
+          club.hours.amenities[c.match]?.spans.length ||
+          club.amenities.some((a) => a.toLowerCase().includes(c.match))
       )
-      .map((c) => c.label);
+    ).map((c) => c.label);
   }, [clubs]);
 
   const wallClock = useMemo(
@@ -161,7 +182,20 @@ export default function Home() {
               openingSoonMinutes: OPENING_SOON
             });
         const distanceKm = club.geo ? haversineKm(origin, club.geo) : undefined;
-        return { club, status: status.status, detail: detailOf(status), distanceKm };
+        const daySpans = wallClock
+          ? getSpansForDay(spans, wallClock.day)
+          : getSpansForDate(spans, now, club.timezone);
+        const features = WATER_FEATURES.filter((w) =>
+          club.amenities.some((a) => a.toLowerCase().includes(w.match))
+        ).map((w) => w.label);
+        return {
+          club,
+          status: status.status,
+          detail: detailOf(status),
+          distanceKm,
+          hours: formatDayHours(daySpans),
+          features
+        };
       });
 
     const rank: Record<HoursStatus, number> = {
@@ -199,7 +233,14 @@ export default function Home() {
   );
 
   const mapped = useMemo<MappedClub[]>(
-    () => rows.map((r) => ({ club: r.club, status: r.status, detail: r.detail })),
+    () =>
+      rows.map((r) => ({
+        club: r.club,
+        status: r.status,
+        detail: r.detail,
+        hours: r.hours,
+        features: r.features
+      })),
     [rows]
   );
 

@@ -10,6 +10,8 @@ export type Row = {
   status: HoursStatus;
   detail: string;
   distanceKm?: number;
+  hours: string;
+  features: string[];
 };
 
 const STATUS_LABEL: Record<HoursStatus, string> = {

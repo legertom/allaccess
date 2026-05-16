@@ -11,6 +11,8 @@ export type MappedClub = {
   club: Club;
   status: HoursStatus;
   detail: string;
+  hours: string; // today's hours for the active mode, preformatted
+  features: string[]; // water features the club has (Pool/Jacuzzi/…)
 };
 
 const STATUS_COLOR: Record<HoursStatus, string> = {
@@ -160,10 +162,23 @@ function ClusterLayer({ clubs, selectedId, onSelect }: Props) {
                 <div className="popupName">{mapped.club.name}</div>
                 <div className="popupMeta">
                   {mapped.club.address.line1}, {mapped.club.address.city}
+                  {mapped.club.address.state ? `, ${mapped.club.address.state}` : ""}
                 </div>
-                <div className="popupMeta" style={{ color }}>
+                <div className="popupStatus" style={{ color }}>
                   {mapped.detail}
                 </div>
+                <div className="popupHours">
+                  <span aria-hidden="true">🕒</span> {mapped.hours}
+                </div>
+                {mapped.features.length > 0 && (
+                  <div className="popupFeatures">
+                    {mapped.features.map((f) => (
+                      <span key={f} className="popupFeature">
+                        {f}
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <a href={mapped.club.source.url} target="_blank" rel="noreferrer">
                   View on Equinox →
                 </a>
