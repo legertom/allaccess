@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
-import { MapContainer, TileLayer, CircleMarker, Popup, Tooltip, useMap, useMapEvents } from "react-leaflet";
+import { useEffect, useMemo, useReducer, useRef } from "react";
+import { MapContainer, TileLayer, CircleMarker, Popup, Tooltip, useMap } from "react-leaflet";
 import Supercluster from "supercluster";
 import type { Club } from "../lib/types";
 import type { HoursStatus } from "../lib/hours";
@@ -31,7 +31,22 @@ type PointProps = { clubId: string; status: HoursStatus; idx: number };
 
 function ClusterLayer({ clubs, selectedId, onSelect }: Props) {
   const map = useMap();
-  const [version, setVersion] = useState(0);
+  const [version, bump] = useReducer((v: number) => v + 1, 0);
+
+  // Recompute clusters on viewport change AND once the map is ready. Without
+  // the initial bump + invalidateSize, markers don't paint until the user
+  // pans (the container is sized after mount in a full-bleed layout).
+  useEffect(() => {
+    const onChange = () => bump();
+    map.on("moveend zoomend resize", onChange);
+    map.whenReady(() => {
+      map.invalidateSize();
+      onChange();
+    });
+    return () => {
+      map.off("moveend zoomend resize", onChange);
+    };
+  }, [map]);
 
   const points = useMemo(
     () =>
@@ -50,11 +65,6 @@ function ClusterLayer({ clubs, selectedId, onSelect }: Props) {
     sc.load(points);
     return sc;
   }, [points]);
-
-  useMapEvents({
-    moveend: () => setVersion((v) => v + 1),
-    zoomend: () => setVersion((v) => v + 1)
-  });
 
   const clusters = useMemo(() => {
     const b = map.getBounds();

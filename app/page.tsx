@@ -80,10 +80,27 @@ export default function Home() {
 
   const regionIndex = useMemo(() => buildRegionIndex(clubs), [clubs]);
 
+  // Curated, hours-backed amenity chips (plan §4): Pool/Spa/Kids Club have
+  // their own scraped hours via lib/amenities, so selecting one filters AND
+  // recolors markers by that amenity's open/closed state. (Not the ~95 raw
+  // amenity strings — that was unusable.)
   const amenities = useMemo(() => {
-    const set = new Set<string>();
-    clubs.forEach((c) => c.amenities.forEach((a) => a.trim() && set.add(a)));
-    return Array.from(set).sort((a, b) => a.localeCompare(b));
+    const candidates: { label: string; keys: string[] }[] = [
+      { label: "Pool", keys: ["pool"] },
+      { label: "Spa", keys: ["spa"] },
+      { label: "Kids Club", keys: ["kids_club", "kids"] }
+    ];
+    return candidates
+      .filter((c) =>
+        clubs.some(
+          (club) =>
+            c.keys.some((k) => club.hours.amenities[k]?.spans.length) ||
+            club.amenities.some((a) =>
+              c.keys.some((k) => a.toLowerCase().includes(k.replace("_", " ")))
+            )
+        )
+      )
+      .map((c) => c.label);
   }, [clubs]);
 
   const wallClock = useMemo(
