@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useReducer, useRef } from "react";
-import { MapContainer, TileLayer, CircleMarker, Popup, Tooltip, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, CircleMarker, Marker, Popup, Tooltip, useMap } from "react-leaflet";
+import L from "leaflet";
 import Supercluster from "supercluster";
 import type { Club } from "../lib/types";
 import type { HoursStatus } from "../lib/hours";
@@ -62,7 +63,18 @@ function ClusterLayer({ clubs, selectedId, onSelect }: Props) {
   );
 
   const index = useMemo(() => {
-    const sc = new Supercluster<PointProps>({ radius: 64, maxZoom: 16 });
+    // Only cluster when zoomed out (maxZoom 11): at metro zoom the user sees
+    // individual clubs. minPoints 4 keeps pairs/triples as separate pins.
+    // map/reduce aggregates how many clubs in a cluster are open.
+    const sc = new Supercluster<PointProps, { open: number }>({
+      radius: 56,
+      maxZoom: 11,
+      minPoints: 4,
+      map: (p) => ({ open: p.status === "open" ? 1 : 0 }),
+      reduce: (acc, p) => {
+        acc.open += p.open;
+      }
+    });
     sc.load(points);
     return sc;
   }, [points]);
@@ -94,29 +106,32 @@ function ClusterLayer({ clubs, selectedId, onSelect }: Props) {
 
         if (props.cluster) {
           const count = props.point_count;
-          const size = 26 + Math.min(22, Math.log2(count + 1) * 6);
+          const openCount = (feature.properties as { open?: number }).open ?? 0;
+          const size = Math.round(32 + Math.min(26, Math.log2(count + 1) * 7));
+          const ring = openCount > 0 ? "#34d399" : "rgba(255,255,255,0.28)";
+          const icon = L.divIcon({
+            className: "clusterWrap",
+            iconSize: [size, size],
+            html: `<div class="clusterIcon" style="width:${size}px;height:${size}px;border-color:${ring};${
+              openCount > 0 ? "box-shadow:0 0 0 4px rgba(52,211,153,0.18);" : ""
+            }">${count}</div>`
+          });
           return (
-            <CircleMarker
+            <Marker
               key={`c-${props.cluster_id}`}
-              center={[lat, lng]}
-              radius={size / 2}
-              pathOptions={{
-                color: "rgba(255,255,255,0.35)",
-                fillColor: "#14171c",
-                fillOpacity: 0.92,
-                weight: 1
-              }}
+              position={[lat, lng]}
+              icon={icon}
               eventHandlers={{
                 click: () => {
-                  const z = Math.min(index.getClusterExpansionZoom(props.cluster_id), 16);
+                  const z = Math.min(index.getClusterExpansionZoom(props.cluster_id), 14);
                   map.flyTo([lat, lng], z, { duration: 0.4 });
                 }
               }}
             >
-              <Tooltip direction="top" offset={[0, -2]} opacity={1}>
-                {count} clubs
+              <Tooltip direction="top" offset={[0, -size / 2]} opacity={1}>
+                {count} clubs{openCount > 0 ? ` · ${openCount} open` : ""}
               </Tooltip>
-            </CircleMarker>
+            </Marker>
           );
         }
 

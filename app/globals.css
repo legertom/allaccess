@@ -404,16 +404,27 @@ button {
   text-decoration: none;
 }
 
+.clusterWrap {
+  background: transparent;
+  border: 0;
+}
+
 .clusterIcon {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  background: rgba(20, 23, 28, 0.9);
-  border: 1px solid var(--border-strong);
+  background: rgba(16, 18, 22, 0.92);
+  border: 1.5px solid var(--border-strong);
   color: var(--text);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 700;
+  backdrop-filter: blur(2px);
+  transition: transform 0.12s ease;
+}
+
+.clusterWrap:hover .clusterIcon {
+  transform: scale(1.08);
 }
 
 @media (max-width: 640px) {
