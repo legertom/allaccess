@@ -1,7 +1,7 @@
 import * as cheerio from "cheerio";
 import type { Club, HoursSet } from "../../lib/types";
 import { fetchWithCache } from "./http";
-import { slugify, titleCaseSlug } from "./util";
+import { slugify, titleCaseSlug, toIanaTimeZone } from "./util";
 import { deriveCountry, deriveRegionSlug } from "./urls";
 import {
   buildHoursSet,
@@ -114,7 +114,7 @@ export function buildClubFromHtml(url: string, html: string): Club | null {
     Object.assign(amenityHours, extractAmenityHoursFromSections(hoursSections, clubLines));
   }
 
-  const timezone = facility?.timeZone ?? "America/New_York";
+  const timezone = toIanaTimeZone(facility?.timeZone);
   const country =
     deriveCountry({
       facilityCountry: extractCountryFromFacility(facility),

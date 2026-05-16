@@ -85,19 +85,22 @@ export default function Home() {
   // recolors markers by that amenity's open/closed state. (Not the ~95 raw
   // amenity strings — that was unusable.)
   const amenities = useMemo(() => {
-    const candidates: { label: string; keys: string[] }[] = [
-      { label: "Pool", keys: ["pool"] },
-      { label: "Spa", keys: ["spa"] },
-      { label: "Kids Club", keys: ["kids_club", "kids"] }
+    // The amenities the user cares about. "Pool" has scraped amenity-hours
+    // (recolors markers by pool open/closed); the others filter by presence
+    // and color by club status. Substring `match` catches naming variants
+    // ("Eucalyptus Steam Rooms", "Co-Ed Sauna", "Indoor 25-Meter ... Pool").
+    const candidates: { label: string; match: string }[] = [
+      { label: "Pool", match: "pool" },
+      { label: "Jacuzzi", match: "jacuzzi" },
+      { label: "Steam Room", match: "steam" },
+      { label: "Sauna", match: "sauna" }
     ];
     return candidates
       .filter((c) =>
         clubs.some(
           (club) =>
-            c.keys.some((k) => club.hours.amenities[k]?.spans.length) ||
-            club.amenities.some((a) =>
-              c.keys.some((k) => a.toLowerCase().includes(k.replace("_", " ")))
-            )
+            club.hours.amenities[c.match]?.spans.length ||
+            club.amenities.some((a) => a.toLowerCase().includes(c.match))
         )
       )
       .map((c) => c.label);

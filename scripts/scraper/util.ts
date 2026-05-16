@@ -39,6 +39,42 @@ export function slugifyAmenity(value: string): string {
     .replace(/^_+|_+$/g, "");
 }
 
+// Equinox's facility JSON reports display timezone names ("Pacific Standard
+// Time"), not IANA IDs. Map to IANA so date-fns-tz handles DST correctly.
+// (Canada Toronto/Vancouver report the same Eastern/Pacific names; the US
+// IANA zones yield identical offsets, which is correct for status.)
+const TZ_TO_IANA: Record<string, string> = {
+  "eastern standard time": "America/New_York",
+  "eastern daylight time": "America/New_York",
+  "eastern time": "America/New_York",
+  est: "America/New_York",
+  edt: "America/New_York",
+  "us/eastern": "America/New_York",
+  "central standard time": "America/Chicago",
+  "central daylight time": "America/Chicago",
+  "central time": "America/Chicago",
+  cst: "America/Chicago",
+  cdt: "America/Chicago",
+  "mountain standard time": "America/Denver",
+  "mountain daylight time": "America/Denver",
+  "mountain time": "America/Denver",
+  mst: "America/Denver",
+  mdt: "America/Denver",
+  "pacific standard time": "America/Los_Angeles",
+  "pacific daylight time": "America/Los_Angeles",
+  "pacific time": "America/Los_Angeles",
+  pst: "America/Los_Angeles",
+  pdt: "America/Los_Angeles",
+  "us/pacific": "America/Los_Angeles"
+};
+
+export function toIanaTimeZone(value?: string): string {
+  if (!value) return "America/New_York";
+  const trimmed = value.trim();
+  if (trimmed.includes("/")) return trimmed; // already IANA
+  return TZ_TO_IANA[trimmed.toLowerCase()] ?? trimmed;
+}
+
 export function titleCaseSlug(slug: string): string {
   return slug
     .split("-")

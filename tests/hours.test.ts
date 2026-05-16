@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { parseWallClock } from "../lib/time";
+import { parseWallClock, normalizeTimeZone } from "../lib/time";
 import {
   getHoursStatus,
   getHoursStatusForParts,
@@ -38,6 +38,20 @@ describe("parseWallClock", () => {
   it("rejects malformed input", () => {
     expect(parseWallClock("not-a-date")).toBeNull();
     expect(parseWallClock("2026-13-40T99:99")).toBeNull();
+  });
+});
+
+describe("normalizeTimeZone (national data uses display names, not IANA)", () => {
+  it("maps the display names Equinox actually returns to IANA", () => {
+    expect(normalizeTimeZone("Eastern Standard Time")).toBe("America/New_York");
+    expect(normalizeTimeZone("Pacific Standard Time")).toBe("America/Los_Angeles");
+    expect(normalizeTimeZone("PST")).toBe("America/Los_Angeles");
+    expect(normalizeTimeZone("Central Daylight Time")).toBe("America/Chicago");
+  });
+  it("passes through real IANA ids and falls back safely", () => {
+    expect(normalizeTimeZone("America/Los_Angeles")).toBe("America/Los_Angeles");
+    expect(normalizeTimeZone("Europe/London")).toBe("Europe/London");
+    expect(normalizeTimeZone("")).toBe("America/New_York");
   });
 });
 

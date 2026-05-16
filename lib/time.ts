@@ -2,6 +2,31 @@ import { toZonedTime } from "date-fns-tz";
 
 export const NYC_TIMEZONE = "America/New_York";
 
+// Runtime safety net: data should already be IANA (the scraper maps it), but
+// tolerate display names / abbreviations so status math never silently runs
+// on an invalid tz (date-fns-tz treats unknown zones as UTC).
+const TZ_ALIASES: Record<string, string> = {
+  "eastern standard time": "America/New_York",
+  "eastern daylight time": "America/New_York",
+  "eastern time": "America/New_York",
+  est: "America/New_York",
+  edt: "America/New_York",
+  "us/eastern": "America/New_York",
+  "central standard time": "America/Chicago",
+  "central daylight time": "America/Chicago",
+  cst: "America/Chicago",
+  cdt: "America/Chicago",
+  "mountain standard time": "America/Denver",
+  "mountain daylight time": "America/Denver",
+  mst: "America/Denver",
+  mdt: "America/Denver",
+  "pacific standard time": "America/Los_Angeles",
+  "pacific daylight time": "America/Los_Angeles",
+  pst: "America/Los_Angeles",
+  pdt: "America/Los_Angeles",
+  "us/pacific": "America/Los_Angeles"
+};
+
 export function normalizeTimeZone(value?: string): string {
   if (!value) {
     return NYC_TIMEZONE;
@@ -12,19 +37,11 @@ export function normalizeTimeZone(value?: string): string {
     return NYC_TIMEZONE;
   }
 
-  const aliases = new Set([
-    "Eastern Standard Time",
-    "Eastern Daylight Time",
-    "EST",
-    "EDT",
-    "US/Eastern"
-  ]);
-
-  if (aliases.has(trimmed)) {
-    return NYC_TIMEZONE;
+  if (trimmed.includes("/") && !TZ_ALIASES[trimmed.toLowerCase()]) {
+    return trimmed; // already IANA
   }
 
-  return trimmed;
+  return TZ_ALIASES[trimmed.toLowerCase()] ?? trimmed;
 }
 
 /**
