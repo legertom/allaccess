@@ -148,14 +148,6 @@ button {
   font-family: inherit;
 }
 
-.scopeHint {
-  font-size: 0.72rem;
-  color: var(--muted);
-  padding: 4px 8px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  white-space: nowrap;
-}
 
 .rail select:focus-visible,
 .rail input:focus-visible,

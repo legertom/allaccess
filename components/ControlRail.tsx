@@ -29,7 +29,6 @@ export default function ControlRail({
   const cities = state.region
     ? regionIndex.citiesByCountryRegion[`${state.country}::${state.region}`] ?? []
     : [];
-  const proximityActive = !state.country && !state.region && !state.city;
 
   // One search box accepts free text OR a ZIP/postal code. A ZIP switches to
   // proximity ("clubs near 90069"); text filters by name/neighborhood.
@@ -169,12 +168,6 @@ export default function ControlRail({
       >
         {geoStatus === "denied" ? "Near me (blocked)" : "◎ Near me"}
       </button>
-
-      {proximityActive && (
-        <span className="scopeHint" aria-live="polite">
-          Near {state.zip || homeZip}
-        </span>
-      )}
 
       <div className="chips" aria-label="Amenity filter">
         {amenities.map((a) => {
