@@ -15,7 +15,8 @@ export type ViewState = {
   at: string;
   amenity: string;
   q: string;
-  sort: "default" | "distance" | "closing";
+  zip: string; // active proximity ZIP (shareable: "clubs near 90069")
+  sort: "default" | "distance" | "closing" | "name";
 };
 
 const DEFAULTS: ViewState = {
@@ -26,6 +27,7 @@ const DEFAULTS: ViewState = {
   at: "",
   amenity: "",
   q: "",
+  zip: "",
   sort: "default"
 };
 
@@ -34,7 +36,9 @@ function parse(search: string): ViewState {
   const mode = p.get("mode") === "at" ? "at" : "now";
   const sortParam = p.get("sort");
   const sort: ViewState["sort"] =
-    sortParam === "distance" || sortParam === "closing" ? sortParam : "default";
+    sortParam === "distance" || sortParam === "closing" || sortParam === "name"
+      ? sortParam
+      : "default";
   return {
     country: p.get("country") ?? "",
     region: p.get("region") ?? "",
@@ -43,6 +47,7 @@ function parse(search: string): ViewState {
     at: p.get("at") ?? "",
     amenity: p.get("amenity") ?? "",
     q: p.get("q") ?? "",
+    zip: p.get("zip") ?? "",
     sort
   };
 }

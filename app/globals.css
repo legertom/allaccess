@@ -128,6 +128,35 @@ button {
   flex: 1 1 150px;
 }
 
+.homeZip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.homeZip input {
+  width: 84px;
+  appearance: none;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 7px 9px;
+  font-size: 0.82rem;
+  font-family: inherit;
+}
+
+.scopeHint {
+  font-size: 0.72rem;
+  color: var(--muted);
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
 .rail select:focus-visible,
 .rail input:focus-visible,
 .seg button:focus-visible,

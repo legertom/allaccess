@@ -25,6 +25,7 @@ type Props = {
   clubs: MappedClub[];
   selectedId: string | null;
   onSelect: (id: string | null) => void;
+  center?: { lat: number; lng: number };
 };
 
 type PointProps = { clubId: string; status: HoursStatus; idx: number };
@@ -176,20 +177,38 @@ function FlyToSelected({ clubs, selectedId }: { clubs: MappedClub[]; selectedId:
   return null;
 }
 
-export default function ClubMap({ clubs, selectedId, onSelect }: Props) {
-  const center = useMemo<[number, number]>(() => {
+function RecenterOnOrigin({ center }: { center?: { lat: number; lng: number } }) {
+  const map = useMap();
+  const prev = useRef<string | null>(null);
+  useEffect(() => {
+    if (!center) return;
+    const key = `${center.lat.toFixed(4)},${center.lng.toFixed(4)}`;
+    if (prev.current === key) return;
+    const first = prev.current === null;
+    prev.current = key;
+    if (first) return; // MapContainer already opens here
+    map.flyTo([center.lat, center.lng], Math.max(map.getZoom(), 12), { duration: 0.5 });
+  }, [center, map]);
+  return null;
+}
+
+export default function ClubMap({ clubs, selectedId, onSelect, center }: Props) {
+  const initialCenter = useMemo<[number, number]>(() => {
+    if (center) return [center.lat, center.lng];
     const withGeo = clubs.find((m) => m.club.geo);
     return withGeo?.club.geo ? [withGeo.club.geo.lat, withGeo.club.geo.lng] : DEFAULT_CENTER;
-  }, [clubs]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // initial only — RecenterOnOrigin handles subsequent origin changes
 
   return (
-    <MapContainer center={center} zoom={12} className="mapCanvas" scrollWheelZoom>
+    <MapContainer center={initialCenter} zoom={12} className="mapCanvas" scrollWheelZoom>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
         url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
       />
       <ClusterLayer clubs={clubs} selectedId={selectedId} onSelect={onSelect} />
       <FlyToSelected clubs={clubs} selectedId={selectedId} />
+      <RecenterOnOrigin center={center} />
     </MapContainer>
   );
 }

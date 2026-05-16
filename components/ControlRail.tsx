@@ -2,6 +2,7 @@
 
 import type { ViewState } from "../hooks/useUrlState";
 import type { RegionIndex } from "../lib/regions";
+import { looksLikeZip } from "../lib/zip";
 
 type Props = {
   state: ViewState;
@@ -10,6 +11,8 @@ type Props = {
   amenities: string[];
   onNearMe: () => void;
   geoStatus: string;
+  homeZip: string;
+  onHomeZip: (zip: string) => void;
 };
 
 export default function ControlRail({
@@ -18,12 +21,26 @@ export default function ControlRail({
   regionIndex,
   amenities,
   onNearMe,
-  geoStatus
+  geoStatus,
+  homeZip,
+  onHomeZip
 }: Props) {
   const regions = state.country ? regionIndex.regionsByCountry[state.country] ?? [] : [];
   const cities = state.region
     ? regionIndex.citiesByCountryRegion[`${state.country}::${state.region}`] ?? []
     : [];
+  const proximityActive = !state.country && !state.region && !state.city;
+
+  // One search box accepts free text OR a ZIP/postal code. A ZIP switches to
+  // proximity ("clubs near 90069"); text filters by name/neighborhood.
+  const searchValue = state.zip || state.q;
+  const onSearch = (value: string) => {
+    if (looksLikeZip(value)) {
+      onChange({ zip: value.trim(), q: "" });
+    } else {
+      onChange({ q: value, zip: "" });
+    }
+  };
 
   return (
     <div className="rail" role="search">
@@ -72,11 +89,25 @@ export default function ControlRail({
 
       <input
         type="search"
-        aria-label="Search clubs"
-        placeholder="Search club or neighborhood"
-        value={state.q}
-        onChange={(e) => onChange({ q: e.target.value })}
+        aria-label="Search clubs or ZIP"
+        placeholder="Search club, neighborhood, or ZIP"
+        value={searchValue}
+        onChange={(e) => onSearch(e.target.value)}
       />
+
+      <label className="homeZip" title="Default location when nothing else is set">
+        <span aria-hidden="true">⌂</span>
+        <input
+          aria-label="Home ZIP code"
+          inputMode="numeric"
+          placeholder="Home ZIP"
+          defaultValue={homeZip}
+          onBlur={(e) => onHomeZip(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") onHomeZip((e.target as HTMLInputElement).value);
+          }}
+        />
+      </label>
 
       <div className="seg" role="group" aria-label="Time mode">
         <button
@@ -107,10 +138,10 @@ export default function ControlRail({
       <div className="seg" role="group" aria-label="Sort">
         <button
           type="button"
-          aria-pressed={state.sort === "default"}
+          aria-pressed={state.sort === "default" || state.sort === "distance"}
           onClick={() => onChange({ sort: "default" })}
         >
-          A–Z
+          Nearest
         </button>
         <button
           type="button"
@@ -121,15 +152,29 @@ export default function ControlRail({
         </button>
         <button
           type="button"
-          aria-pressed={state.sort === "distance"}
-          onClick={() => {
-            onChange({ sort: "distance" });
-            onNearMe();
-          }}
+          aria-pressed={state.sort === "name"}
+          onClick={() => onChange({ sort: "name" })}
         >
-          {geoStatus === "denied" ? "Near me (blocked)" : "Near me"}
+          A–Z
         </button>
       </div>
+
+      <button
+        type="button"
+        className="chip"
+        onClick={() => {
+          onChange({ sort: "distance" });
+          onNearMe();
+        }}
+      >
+        {geoStatus === "denied" ? "Near me (blocked)" : "◎ Near me"}
+      </button>
+
+      {proximityActive && (
+        <span className="scopeHint" aria-live="polite">
+          Near {state.zip || homeZip}
+        </span>
+      )}
 
       <div className="chips" aria-label="Amenity filter">
         {amenities.map((a) => {

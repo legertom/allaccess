@@ -12,10 +12,12 @@ import {
 import { parseWallClock } from "../lib/time";
 import { buildRegionIndex, clubMatchesLocation } from "../lib/regions";
 import { haversineKm } from "../lib/geo";
-import type { Club } from "../lib/types";
+import { resolveZip, clubsNear, DEFAULT_HOME } from "../lib/zip";
+import type { Club, GeoPoint } from "../lib/types";
 import { useUrlState } from "../hooks/useUrlState";
 import { useFavorites } from "../hooks/useFavorites";
 import { useGeolocation } from "../hooks/useGeolocation";
+import { useHomeZip } from "../hooks/useHomeZip";
 import ControlRail from "../components/ControlRail";
 import ResultsSheet, { type Row } from "../components/ResultsSheet";
 import type { MappedClub } from "../components/ClubMap";
@@ -62,6 +64,19 @@ export default function Home() {
   const [state, update] = useUrlState();
   const { isFavorite, toggle } = useFavorites();
   const geo = useGeolocation();
+  const [homeZip, setHomeZip] = useHomeZip();
+
+  // Relevance origin precedence: live geolocation > searched ZIP >
+  // persisted home ZIP > hard default (10003). Always defined, so the map
+  // opens somewhere sensible and distances/sort are always meaningful.
+  const origin = useMemo<GeoPoint>(() => {
+    if (geo.coords) return geo.coords;
+    const searched = state.zip ? resolveZip(state.zip, clubs) : null;
+    if (searched) return searched;
+    return resolveZip(homeZip, clubs) ?? DEFAULT_HOME;
+  }, [geo.coords, state.zip, homeZip, clubs]);
+
+  const hasExplicitLocation = !!(state.country || state.region || state.city);
 
   useEffect(() => {
     fetch("/api/clubs", { cache: "no-store" })
@@ -117,8 +132,14 @@ export default function Home() {
     const q = state.q.trim().toLowerCase();
     const now = new Date();
 
-    const computed = clubs
-      .filter((c) => clubMatchesLocation(c, state))
+    // Default scope is "near the origin" so a NYC user never sees LA clubs
+    // by default. An explicit country/region/city filter (or a national
+    // "all" via the switcher) overrides proximity for deliberate browsing.
+    const inScope = hasExplicitLocation
+      ? clubs.filter((c) => clubMatchesLocation(c, state))
+      : clubsNear(clubs, origin);
+
+    const computed = inScope
       .filter((c) => clubHasAmenity(c, state.amenity || undefined))
       .filter((c) => {
         if (!q) return true;
@@ -139,8 +160,7 @@ export default function Home() {
               closingSoonMinutes: CLOSING_SOON,
               openingSoonMinutes: OPENING_SOON
             });
-        const distanceKm =
-          geo.coords && club.geo ? haversineKm(geo.coords, club.geo) : undefined;
+        const distanceKm = club.geo ? haversineKm(origin, club.geo) : undefined;
         return { club, status: status.status, detail: detailOf(status), distanceKm };
       });
 
@@ -150,17 +170,19 @@ export default function Home() {
       opening_soon: 2,
       closed: 3
     };
+    const byDistance = (a: Row, b: Row) =>
+      (a.distanceKm ?? Infinity) - (b.distanceKm ?? Infinity);
     computed.sort((a, b) => {
-      if (state.sort === "distance" && a.distanceKm !== undefined && b.distanceKm !== undefined) {
-        return a.distanceKm - b.distanceKm;
-      }
       if (state.sort === "closing") {
         if (rank[a.status] !== rank[b.status]) return rank[a.status] - rank[b.status];
+        return byDistance(a, b);
       }
-      return a.club.name.localeCompare(b.club.name);
+      if (state.sort === "name") return a.club.name.localeCompare(b.club.name);
+      // "default" and "distance": nearest to the origin first (relevance).
+      return byDistance(a, b);
     });
     return computed;
-  }, [clubs, state, wallClock, geo.coords, tick]);
+  }, [clubs, state, wallClock, origin, hasExplicitLocation, tick]);
 
   const counts = useMemo(
     () =>
@@ -183,7 +205,12 @@ export default function Home() {
 
   return (
     <main className="app">
-      <ClubMap clubs={mapped} selectedId={selectedId} onSelect={setSelectedId} />
+      <ClubMap
+        clubs={mapped}
+        selectedId={selectedId}
+        onSelect={setSelectedId}
+        center={origin}
+      />
       <ControlRail
         state={state}
         onChange={update}
@@ -191,6 +218,8 @@ export default function Home() {
         amenities={amenities}
         onNearMe={geo.request}
         geoStatus={geo.status}
+        homeZip={homeZip}
+        onHomeZip={setHomeZip}
       />
       <ResultsSheet
         rows={rows}
