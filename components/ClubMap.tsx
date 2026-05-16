@@ -1,205 +1,185 @@
 "use client";
 
-import { useMemo } from "react";
-import { MapContainer, TileLayer, CircleMarker, Popup, Tooltip } from "react-leaflet";
-import type { LatLngBoundsExpression } from "leaflet";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { MapContainer, TileLayer, CircleMarker, Popup, Tooltip, useMap, useMapEvents } from "react-leaflet";
+import Supercluster from "supercluster";
 import type { Club } from "../lib/types";
-import { getHoursSetForClub } from "../lib/amenities";
-import { getHoursStatus, getSpansForDate, type HoursStatus, type HoursStatusResult } from "../lib/hours";
-import { normalizeTimeZone } from "../lib/time";
+import type { HoursStatus } from "../lib/hours";
+
+export type MappedClub = {
+  club: Club;
+  status: HoursStatus;
+  detail: string;
+};
+
+const STATUS_COLOR: Record<HoursStatus, string> = {
+  open: "#34d399",
+  closing_soon: "#fbbf24",
+  opening_soon: "#38bdf8",
+  closed: "#6b7280"
+};
 
 const DEFAULT_CENTER: [number, number] = [40.758, -73.985];
 
-const STATUS_LABELS: Record<HoursStatus, string> = {
-  open: "Open",
-  closing_soon: "Closing soon",
-  opening_soon: "Opening soon",
-  closed: "Closed"
+type Props = {
+  clubs: MappedClub[];
+  selectedId: string | null;
+  onSelect: (id: string | null) => void;
 };
 
-const STATUS_CLASS: Record<HoursStatus, string> = {
-  open: "status-open",
-  closing_soon: "status-closing",
-  opening_soon: "status-opening",
-  closed: "status-closed"
-};
+type PointProps = { clubId: string; status: HoursStatus; idx: number };
 
-const STATUS_COLORS: Record<HoursStatus, string> = {
-  open: "#d6b46b",
-  closing_soon: "#ff9a62",
-  opening_soon: "#5fd3c4",
-  closed: "#6a6a6a"
-};
+function ClusterLayer({ clubs, selectedId, onSelect }: Props) {
+  const map = useMap();
+  const [version, setVersion] = useState(0);
 
-type ClubMapProps = {
-  clubs: Club[];
-  referenceDate: Date;
-  isLive?: boolean;
-  amenity?: string;
-  closingSoonMinutes?: number;
-  openingSoonMinutes?: number;
-};
-
-function formatMinutes(value: string): string {
-  const [h, m] = value.split(":").map(Number);
-  if (Number.isNaN(h) || Number.isNaN(m)) {
-    return value;
-  }
-  const hour = h % 24;
-  const meridiem = hour >= 12 ? "PM" : "AM";
-  const displayHour = hour % 12 === 0 ? 12 : hour % 12;
-  return `${displayHour}:${m.toString().padStart(2, "0")} ${meridiem}`;
-}
-
-function formatSpan(open: string, close: string): string {
-  const openLabel = formatMinutes(open);
-  const closeLabel = close === "24:00" ? "12:00 AM" : formatMinutes(close);
-  return `${openLabel} - ${closeLabel}`;
-}
-
-function formatWeekday(date: Date, timeZone: string): string {
-  return new Intl.DateTimeFormat("en-US", {
-    timeZone,
-    weekday: "long"
-  }).format(date);
-}
-
-function formatDuration(minutes: number): string {
-  const rounded = Math.max(0, Math.round(minutes));
-  const hours = Math.floor(rounded / 60);
-  const remaining = rounded % 60;
-  if (hours === 0) {
-    return `${remaining}m`;
-  }
-  if (remaining === 0) {
-    return `${hours}h`;
-  }
-  return `${hours}h ${remaining}m`;
-}
-
-function formatStatusDetail(status: HoursStatusResult, isLive: boolean): string {
-  switch (status.status) {
-    case "closing_soon":
-      return status.minutesUntilClose !== undefined
-        ? `Closes in ${formatDuration(status.minutesUntilClose)}`
-        : "Closing soon";
-    case "opening_soon":
-      return status.minutesUntilOpen !== undefined
-        ? `Opens in ${formatDuration(status.minutesUntilOpen)}`
-        : "Opening soon";
-    case "open":
-      return isLive ? "Open now" : "Open at that time";
-    default:
-      return "Closed";
-  }
-}
-
-export default function ClubMap({
-  clubs,
-  referenceDate,
-  isLive = true,
-  amenity,
-  closingSoonMinutes = 90,
-  openingSoonMinutes = 60
-}: ClubMapProps) {
   const points = useMemo(
     () =>
       clubs
-        .filter((club) => club.geo)
-        .map((club) => ({
-          club,
-          position: [club.geo!.lat, club.geo!.lng] as [number, number]
+        .filter((m) => m.club.geo)
+        .map<GeoJSON.Feature<GeoJSON.Point, PointProps>>((m, idx) => ({
+          type: "Feature",
+          properties: { clubId: m.club.id, status: m.status, idx },
+          geometry: { type: "Point", coordinates: [m.club.geo!.lng, m.club.geo!.lat] }
         })),
     [clubs]
   );
 
-  const bounds = useMemo<LatLngBoundsExpression | undefined>(() => {
-    if (points.length < 2) {
-      return undefined;
-    }
-    return points.map((point) => point.position) as LatLngBoundsExpression;
+  const index = useMemo(() => {
+    const sc = new Supercluster<PointProps>({ radius: 64, maxZoom: 16 });
+    sc.load(points);
+    return sc;
   }, [points]);
 
-  const center = points.length ? points[0].position : DEFAULT_CENTER;
+  useMapEvents({
+    moveend: () => setVersion((v) => v + 1),
+    zoomend: () => setVersion((v) => v + 1)
+  });
+
+  const clusters = useMemo(() => {
+    const b = map.getBounds();
+    const bbox: [number, number, number, number] = [
+      b.getWest(),
+      b.getSouth(),
+      b.getEast(),
+      b.getNorth()
+    ];
+    return index.getClusters(bbox, Math.round(map.getZoom()));
+    // version forces recompute on pan/zoom
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index, map, version]);
+
+  const byId = useMemo(() => {
+    const m = new Map<string, MappedClub>();
+    clubs.forEach((c) => m.set(c.club.id, c));
+    return m;
+  }, [clubs]);
 
   return (
-    <div className="mapContainer">
-      <MapContainer
-        center={center}
-        zoom={12}
-        scrollWheelZoom
-        bounds={bounds}
-        boundsOptions={{ padding: [30, 30] }}
-        className="mapCanvas"
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        />
-        {points.map((point) => {
-          const timeZone = normalizeTimeZone(point.club.timezone);
-          const hoursSet = getHoursSetForClub(point.club, amenity);
-          const daySpans = getSpansForDate(hoursSet.spans, referenceDate, timeZone);
-          const weekday = formatWeekday(referenceDate, timeZone);
-          const spanLabels =
-            daySpans.length === 1 && daySpans[0].open === "00:00" && daySpans[0].close === "24:00"
-              ? ["Open 24 hours"]
-              : daySpans.map((span) => formatSpan(span.open, span.close));
+    <>
+      {clusters.map((feature) => {
+        const [lng, lat] = feature.geometry.coordinates;
+        const props = feature.properties as Supercluster.ClusterProperties & PointProps;
 
-          const status = getHoursStatus(hoursSet.spans, referenceDate, timeZone, {
-            closingSoonMinutes,
-            openingSoonMinutes
-          });
-          const statusLabel = STATUS_LABELS[status.status];
-          const statusClass = STATUS_CLASS[status.status];
-          const statusDetail = formatStatusDetail(status, isLive);
-          const markerColor = STATUS_COLORS[status.status] ?? STATUS_COLORS.closed;
-
+        if (props.cluster) {
+          const count = props.point_count;
+          const size = 26 + Math.min(22, Math.log2(count + 1) * 6);
           return (
             <CircleMarker
-              key={point.club.id}
-              center={point.position}
-              radius={8}
+              key={`c-${props.cluster_id}`}
+              center={[lat, lng]}
+              radius={size / 2}
               pathOptions={{
-                color: markerColor,
-                fillColor: markerColor,
+                color: "rgba(255,255,255,0.35)",
+                fillColor: "#14171c",
                 fillOpacity: 0.92,
-                weight: 2
+                weight: 1
+              }}
+              eventHandlers={{
+                click: () => {
+                  const z = Math.min(index.getClusterExpansionZoom(props.cluster_id), 16);
+                  map.flyTo([lat, lng], z, { duration: 0.4 });
+                }
               }}
             >
-              <Tooltip direction="top" offset={[0, -6]} opacity={1} className="mapTooltip">
-                <div className="tooltipTitle">{point.club.name}</div>
-                <div className={`tooltipStatus ${statusClass}`}>{statusLabel}</div>
+              <Tooltip direction="top" offset={[0, -2]} opacity={1}>
+                {count} clubs
               </Tooltip>
-              <Popup className="mapPopup">
-                <div className="popupHeader">
-                  <div className="popupTitle">{point.club.name}</div>
-                  <div className={`statusPill ${statusClass}`}>
-                    <span className={`statusDot ${statusClass}`} />
-                    {statusLabel}
-                  </div>
-                </div>
-                <div className="small">{point.club.address.line1}</div>
-                <div className="small">
-                  {point.club.address.city}, {point.club.address.state} {point.club.address.postalCode}
-                </div>
-                <div className="statusDetail">{statusDetail}</div>
-                <div className="small">Hours for {weekday}</div>
-                <div className="hours">
-                  {spanLabels.length ? (
-                    spanLabels.map((label) => <span key={`${point.club.id}-${label}`}>{label}</span>)
-                  ) : (
-                    <span>Hours unavailable</span>
-                  )}
-                </div>
-                <a className="link" href={point.club.source.url} target="_blank" rel="noreferrer">
-                  View on Equinox
-                </a>
-              </Popup>
             </CircleMarker>
           );
-        })}
-      </MapContainer>
-    </div>
+        }
+
+        const mapped = byId.get(props.clubId);
+        if (!mapped) return null;
+        const color = STATUS_COLOR[props.status];
+        const selected = selectedId === props.clubId;
+        return (
+          <CircleMarker
+            key={props.clubId}
+            center={[lat, lng]}
+            radius={selected ? 11 : 7}
+            pathOptions={{
+              color: selected ? "#ffffff" : color,
+              fillColor: color,
+              fillOpacity: 0.95,
+              weight: selected ? 3 : 2
+            }}
+            eventHandlers={{ click: () => onSelect(props.clubId) }}
+          >
+            <Tooltip direction="top" offset={[0, -4]} opacity={1}>
+              {mapped.club.name}
+            </Tooltip>
+            <Popup>
+              <div className="popup">
+                <div className="popupName">{mapped.club.name}</div>
+                <div className="popupMeta">
+                  {mapped.club.address.line1}, {mapped.club.address.city}
+                </div>
+                <div className="popupMeta" style={{ color }}>
+                  {mapped.detail}
+                </div>
+                <a href={mapped.club.source.url} target="_blank" rel="noreferrer">
+                  View on Equinox →
+                </a>
+              </div>
+            </Popup>
+          </CircleMarker>
+        );
+      })}
+    </>
+  );
+}
+
+function FlyToSelected({ clubs, selectedId }: { clubs: MappedClub[]; selectedId: string | null }) {
+  const map = useMap();
+  const prev = useRef<string | null>(null);
+  useEffect(() => {
+    if (!selectedId || selectedId === prev.current) return;
+    prev.current = selectedId;
+    const target = clubs.find((m) => m.club.id === selectedId);
+    if (target?.club.geo) {
+      map.flyTo([target.club.geo.lat, target.club.geo.lng], Math.max(map.getZoom(), 13), {
+        duration: 0.5
+      });
+    }
+  }, [selectedId, clubs, map]);
+  return null;
+}
+
+export default function ClubMap({ clubs, selectedId, onSelect }: Props) {
+  const center = useMemo<[number, number]>(() => {
+    const withGeo = clubs.find((m) => m.club.geo);
+    return withGeo?.club.geo ? [withGeo.club.geo.lat, withGeo.club.geo.lng] : DEFAULT_CENTER;
+  }, [clubs]);
+
+  return (
+    <MapContainer center={center} zoom={12} className="mapCanvas" scrollWheelZoom>
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+      />
+      <ClusterLayer clubs={clubs} selectedId={selectedId} onSelect={onSelect} />
+      <FlyToSelected clubs={clubs} selectedId={selectedId} />
+    </MapContainer>
   );
 }

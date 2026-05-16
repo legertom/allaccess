@@ -197,16 +197,16 @@ export function parseHoursLines(lines: string[]): HoursSpan[] {
   return spans.flatMap((span) => normalizeSpan(span));
 }
 
-export function isOpenAt(
-  spans: HoursSpan[],
-  date: Date,
-  timeZone: string = NYC_TIMEZONE
-): boolean {
+// A floating wall clock: day-of-week + minutes-into-day, with NO timezone.
+// "now" mode derives this from a real instant + the club's tz; "open at"
+// mode uses the picked value as each club's own local wall clock (the bug
+// fix — see plan §3.3). Pure functions take this; tz-aware wrappers adapt.
+export type WallClock = { day: number; minutes: number };
+
+export function isOpenAtParts(spans: HoursSpan[], { day, minutes }: WallClock): boolean {
   if (!spans.length) {
     return false;
   }
-
-  const { day, minutes } = getZonedParts(date, normalizeTimeZone(timeZone));
   return spans.some((span) => {
     if (span.day !== day) {
       return false;
@@ -215,18 +215,29 @@ export function isOpenAt(
   });
 }
 
+export function isOpenAt(
+  spans: HoursSpan[],
+  date: Date,
+  timeZone: string = NYC_TIMEZONE
+): boolean {
+  return isOpenAtParts(spans, getZonedParts(date, normalizeTimeZone(timeZone)));
+}
+
+export function getSpansForDay(spans: HoursSpan[], day: number): HoursSpan[] {
+  if (!spans.length) {
+    return [];
+  }
+  return spans
+    .filter((span) => span.day === day)
+    .sort((a, b) => toMinutes(a.open) - toMinutes(b.open));
+}
+
 export function getSpansForDate(
   spans: HoursSpan[],
   date: Date,
   timeZone: string = NYC_TIMEZONE
 ): HoursSpan[] {
-  if (!spans.length) {
-    return [];
-  }
-  const { day } = getZonedParts(date, normalizeTimeZone(timeZone));
-  return spans
-    .filter((span) => span.day === day)
-    .sort((a, b) => toMinutes(a.open) - toMinutes(b.open));
+  return getSpansForDay(spans, getZonedParts(date, normalizeTimeZone(timeZone)).day);
 }
 
 export type HoursStatus = "open" | "closing_soon" | "opening_soon" | "closed";
@@ -242,10 +253,11 @@ type HoursStatusOptions = {
   openingSoonMinutes?: number;
 };
 
-export function getHoursStatus(
+// Pure: status from a floating wall clock + spans. No Date, no tz, no URL,
+// no UI — keep it that way (CTO execution guidance).
+export function getHoursStatusForParts(
   spans: HoursSpan[],
-  date: Date,
-  timeZone: string = NYC_TIMEZONE,
+  { day, minutes }: WallClock,
   options: HoursStatusOptions = {}
 ): HoursStatusResult {
   if (!spans.length) {
@@ -254,7 +266,6 @@ export function getHoursStatus(
 
   const closingSoonMinutes = options.closingSoonMinutes ?? 90;
   const openingSoonMinutes = options.openingSoonMinutes ?? 60;
-  const { day, minutes } = getZonedParts(date, normalizeTimeZone(timeZone));
   const daySpans = spans.filter((span) => span.day === day);
 
   let openSpan: HoursSpan | undefined;
@@ -309,4 +320,19 @@ export function getHoursStatus(
   }
 
   return { status: "closed", minutesUntilOpen };
+}
+
+// "now" mode: derive the wall clock from a real instant in the club's tz.
+// Behavior is identical to the original getHoursStatus.
+export function getHoursStatus(
+  spans: HoursSpan[],
+  date: Date,
+  timeZone: string = NYC_TIMEZONE,
+  options: HoursStatusOptions = {}
+): HoursStatusResult {
+  return getHoursStatusForParts(
+    spans,
+    getZonedParts(date, normalizeTimeZone(timeZone)),
+    options
+  );
 }

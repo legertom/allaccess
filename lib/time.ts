@@ -1,5 +1,4 @@
-import { parse } from "date-fns";
-import { fromZonedTime, toZonedTime } from "date-fns-tz";
+import { toZonedTime } from "date-fns-tz";
 
 export const NYC_TIMEZONE = "America/New_York";
 
@@ -28,17 +27,31 @@ export function normalizeTimeZone(value?: string): string {
   return trimmed;
 }
 
-export function parseNYCDateTime(value: string): Date | null {
-  if (!value) {
+/**
+ * Parse a `datetime-local` value ("yyyy-MM-ddTHH:mm") into a FLOATING wall
+ * clock (day-of-week + minutes), with no timezone conversion. This replaces
+ * parseNYCDateTime, which forced the input to US Eastern and was the source
+ * of the cross-timezone "Open at" bug (plan §3). Weekday is computed from a
+ * UTC date so it is DST- and local-tz-independent.
+ */
+export function parseWallClock(value: string): { day: number; minutes: number } | null {
+  const m = value.match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+  if (!m) {
     return null;
   }
-
-  const parsed = parse(value, "yyyy-MM-dd'T'HH:mm", new Date());
-  if (Number.isNaN(parsed.getTime())) {
+  const year = Number(m[1]);
+  const month = Number(m[2]);
+  const dayOfMonth = Number(m[3]);
+  const hour = Number(m[4]);
+  const minute = Number(m[5]);
+  if (month < 1 || month > 12 || dayOfMonth < 1 || dayOfMonth > 31) {
     return null;
   }
-
-  return fromZonedTime(parsed, NYC_TIMEZONE);
+  if (hour > 23 || minute > 59) {
+    return null;
+  }
+  const day = new Date(Date.UTC(year, month - 1, dayOfMonth)).getUTCDay();
+  return { day, minutes: hour * 60 + minute };
 }
 
 export function getZonedParts(
@@ -50,8 +63,4 @@ export function getZonedParts(
     day: zoned.getDay(),
     minutes: zoned.getHours() * 60 + zoned.getMinutes()
   };
-}
-
-export function getNYCParts(date: Date): { day: number; minutes: number } {
-  return getZonedParts(date, NYC_TIMEZONE);
 }

@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Equinox NYC Hours",
-  description: "Find NYC Equinox clubs open now or at a specific time."
+  title: "Equinox Sundial",
+  description: "Find Equinox clubs open now or at a chosen time — map-first, per-club local time."
 };
 
 export default function RootLayout({
